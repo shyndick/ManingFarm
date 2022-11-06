@@ -1,0 +1,9 @@
+.f_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.f_item {
+    display: flex;
+    flex-direction: column;
+}
