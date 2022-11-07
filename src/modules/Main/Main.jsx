@@ -1,5 +1,9 @@
 export const Main = () => {
     return(
-        <h1>Главная</h1>
+        <main>
+            <div className="container">
+                <h1>Главная</h1>
+            </div>
+        </main>
     )
 }

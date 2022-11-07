@@ -1,5 +1,9 @@
 export const Delivery = () => {
     return (
-        <h1>Доставка</h1>
+        <main>
+            <div className="container">
+                <h1>Доставка</h1>
+            </div>
+        </main>
     )
 }

@@ -1,5 +1,9 @@
 export const Cart = () => {
     return (
-        <h1>Корзина</h1>
+        <main>
+            <div className="container">
+                <h1>Корзина</h1>
+            </div>
+        </main>
     )
 }

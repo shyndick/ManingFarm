@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../src/styles/footer.css'
 import '../src/styles/style.css'
+import '../src/styles/main.css'
+import '../src/styles/header.css'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 

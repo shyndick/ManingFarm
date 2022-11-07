@@ -23,8 +23,8 @@ export const Footer = () => {
                         <NavLink to="/politica">Сборка ферм</NavLink>
                     </div>
                     <div className="f_item">
-                        <p>miner@basa.com</p>
-                        <p>+7 910 245-02-74</p>
+                        <a className='contact__email' href="email:maner@basa.com">miner@basa.com</a>
+                        <a className='contact__phone' href="tel:+375255275480">+375 25 527-54-80</a>
                         <p>ООО"фйти Технологии"</p>
                         <p>ИНН: 5465465465465</p>
                     </div>

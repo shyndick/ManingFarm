@@ -1,5 +1,9 @@
 export const Catalog = () => {
     return (
-        <h1>Каталог</h1>
+        <main>
+            <div className="container">
+                <h1>Каталог</h1>
+            </div>
+        </main>
     )
 }
