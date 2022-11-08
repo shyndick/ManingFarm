@@ -3,7 +3,6 @@ import { Main } from "./modules/Main/Main";
 import { CoinList } from "./modules/CoinList/CoinList";
 import { Contacts } from  "./modules/Contacts/Contacts";
 import { Catalog } from  "./modules/Catalog/Catalog";
-import { Guarantee } from  "./modules/Guarantee/Guarantee";
 import { Delivery } from  "./modules/Delivery/Delivery";
 import { Layout } from "./modules/Layout/Layout";
 import { Cart } from "./modules/Cart/Cart";

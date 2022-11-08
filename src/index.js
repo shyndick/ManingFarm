@@ -4,6 +4,7 @@ import '../src/styles/footer.css'
 import '../src/styles/style.css'
 import '../src/styles/main.css'
 import '../src/styles/header.css'
+import '../src/styles/coinList.css'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 

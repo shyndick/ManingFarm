@@ -1,0 +1,37 @@
+.coin_list,
+.coin_list_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.coin_title {
+    text-align: center;
+    padding: 25px;
+}
+
+.coin_list_item, 
+.coin_list_name_item {
+    padding: 15px 0;
+    font-size: 21px;
+}
+
+.coin_list_item:first-child,
+.coin_list_name_item:first-child {
+    width: 14%;
+}
+
+.coin_list_item:not(:first-child), 
+.coin_list_name_item:not(:first-child) {
+    width: 21.5%;
+}
+
+.coin_list:nth-child(even),
+.coin_list_name {
+    background-color: #bfc5f9;
+}
+
+.coin_list:last-child {
+    margin-bottom: 25px;
+}

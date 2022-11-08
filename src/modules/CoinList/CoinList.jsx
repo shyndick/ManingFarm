@@ -1,27 +1,39 @@
-import { useEffect, useState } from "react"
-import { json } from "react-router-dom"
+import {observer} from "mobx-react-lite"
+import { useEffect } from "react"
+import coinListStore from "./stores/CoinListStore"
 
-export const CoinList = () => {
+export const CoinList = observer(() => {
 
-    const [list, setList] = useState([])
+    const {list, loadList, loading} = coinListStore
 
     useEffect(() => {
-        fetch('https://api.coincap.io/v2/assets')
-                        .then(response => response.json())
-                        .then(list => setList(list.data))
+        loadList()
     }, [])
 
     return (
         
         <main>
+            {console.log(list)}
             <div className="container">
-                {console.log('render')}
-                {console.log(list)}
-                <h1>Курс крипты</h1>
-                {list.length === 0 && <h2>Loading...</h2>}
-                {list.length > 0 && list.map(item => <p key={item.id}>{item.rank} - {item.name} - {item.priceUsd
-}</p>)}
+                <h1 className="coin_title">Курс крипты</h1>
+                <div  className="coin_list_name">
+                    <div className="coin_list_name_item">Название</div>
+                    <div className="coin_list_name_item">Объем(24ч), $</div>
+                    <div className="coin_list_name_item">Рыночная капитализация, $</div>
+                    <div className="coin_list_name_item">Изменение 24ч, %</div>
+                    <div className="coin_list_name_item">Цена, $</div>
+                </div>
+                {loading && <h2>Loading...</h2>}
+                {!loading && list.map(item => 
+                    <div key={item.id} className="coin_list">
+                        <div className="coin_list_item">{item.name}</div>
+                        <div className="coin_list_item">{item.volumeUsd24Hr} $</div>
+                        <div className="coin_list_item">{item.marketCapUsd} $</div>
+                        <div className="coin_list_item">{item.changePercent24Hr} %</div>
+                        <div className="coin_list_item">{item.priceUsd} $</div>
+                    </div>
+                )}
             </div>
         </main>
     )
-}
+})
