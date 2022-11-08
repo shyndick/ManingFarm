@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import Logo  from "../image/logo.png"
+import { ContactMessege } from "./ContactMessege"
 
 export const Header = () => {
     return (
@@ -12,11 +13,7 @@ export const Header = () => {
                             <a className='info_phone' href="tel:+375255275480"><i className="fa fa-phone" aria-hidden="true"></i>+375 25 527-54-80</a>
                             <a className='info_pozvoni' href="tel:+375255275480">Заказать звонок</a>
                         </div>
-                        <div className="info_messege">
-                            <a href="https://www.instagram.com/" target='blank' className='massege_item'><i className="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="https://web.telegram.org/" target='blank' className='massege_item'><i className="fa fa-telegram" aria-hidden="true"></i></a>
-                            <a href="https://www.whatsapp.com/" target='blank' className='massege_item'><i className="fa fa-whatsapp" aria-hidden="true"></i></a>
-                        </div>
+                        <ContactMessege/>
                     </div>    
                 </div>
             </div>
@@ -28,7 +25,7 @@ export const Header = () => {
                     <div className='nav_wrapper'>
                         <NavLink className="nav_link" to="/">Главная</NavLink>
                         <NavLink className="nav_link" to="/catalog">Каталог</NavLink>
-                        <NavLink className="nav_link" to="/guarantee">Гарантия/Возврат</NavLink>
+                        <NavLink className="nav_link" to="/coin-list">Курс крипты</NavLink>
                         <NavLink className="nav_link" to="/contacts">Контакты</NavLink>
                         <NavLink className="nav_link" to="/delivery">Доставка</NavLink>
                     </div>
