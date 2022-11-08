@@ -3,22 +3,77 @@
     height: 70px;
 }
 
+.info .container {
+    height: 100%;
+}
+
 .info_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.info_items i {
+    margin-right: 10px;
+}
+
+.info_email, 
+.info_phone {
+    color: #f5f5f5;
+    margin-right: 25px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.info_pozvoni,
+.massege_item i,
+.info_items i {
+    color: #a19dd1;
+}
+
+.fa-instagram:before,
+.fa-telegram:before,
+.fa-whatsapp:before {
+    font-size: 30px;
+}
+
+.info_messege a:not(:last-child){
+    margin-right: 25px;
+}
+
+.nav {
+    height: 80px;
+
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.info_email, 
-.info_phone {
-    color: #f5f5f5
+.nav_link {
+    color: #303239;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.info_pozvoni, 
-.massege_item {
-    color: #a19dd1;
+.nav_link:hover {
+    border-bottom: #303239;
 }
 
-.massege_item img{
-    background-color: #a19dd1;
+.nav_link:not(:last-child) {
+    margin-right: 25px;
 }
+
+.nav_cart i{
+    font-size: 30px;
+    color: #000;
+}
+
+.nav_cart {
+    border-radius: 2px solid #000;
+}
+
+

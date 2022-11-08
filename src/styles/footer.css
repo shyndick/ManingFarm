@@ -1,9 +1,38 @@
+footer {
+    height: 200px;
+    background-color: #303239;
+}
+
 .f_wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 
 .f_item {
+    margin-top: 20px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
+    color: #f5f5f5;
+}
+
+.f_item a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.f_title{
+    color: #a19dd1;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.f_item .info_messege {
+    margin-top: 10px;
+}
+
+.contact_phone {
+    margin-bottom: 10px;
 }
