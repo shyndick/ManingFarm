@@ -144,7 +144,7 @@
         "title":"PNY Quadro RTX 8000 48GB GDDR6 VCQRTX8000-PB",
         "price":"36 036,00",
         "description":"NVIDIA Quadro RTX 8000 48 ГБ GDDR6, базовая частота 1395 МГц, макс. частота 1750 МГц, 4608sp, 72 RT-ядер, 384 бит, доп. питание: 6+8 pin, 2 слота, DisplayPort, USB Type-C, трассировка лучей",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/a9c083f046275c3fa7e65afa063eb9d8.jpeg",
         "image-2":"https://content2.onliner.by/catalog/device/large/0014d0c3605283858b196334a60b83e5.jpeg",
         "image-3":"https://content2.onliner.by/catalog/device/large/f9e43e8a853518af558132e27944a95d.jpeg"
@@ -154,7 +154,7 @@
         "title":"PNY NVIDIA Tesla T4 16GB GDDR6 RTCST4M-PB",
         "price":"26 363,76",
         "description":"NVIDIA Tesla T4 16 ГБ GDDR6, макс. частота 1590 МГц, 2560sp, 256 бит",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/6483eabb2ec70604d85687a6233bebf8.jpeg",
         "image-2":"https://content2.onliner.by/catalog/device/large/8def18408deabe88348f322e1a71a4a9.jpeg",
         "image-3":"https://content2.onliner.by/catalog/device/large/a829c0adafdb723466880075fc5d7dcc.jpeg"
@@ -164,7 +164,7 @@
         "title":"Dell Quadro RTX 6000 24GB GDDR6 490-BFCZ",
         "price":"15 698,75",
         "description":"NVIDIA Quadro RTX 6000 24 ГБ GDDR6, 4608sp, 72 RT-ядер, 384 бит, доп. питание: 6+8 pin, 2 слота, DisplayPort, USB Type-C, трассировка лучей",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/ea951368512a3d05331780b275dbd036.jpeg",
         "image-2":"https://content2.onliner.by/catalog/device/large/968778549f7c4007f44c820edf052109.jpeg",
         "image-3":"https://content2.onliner.by/catalog/device/large/9355d1605010f315acc88c875a4c7566.jpeg"
@@ -174,7 +174,7 @@
         "title":"AMD Radeon Pro W6800 32GB GDDR6 100-506157",
         "price":"14 850,00",
         "description":"AMD Radeon Pro W6800 32 ГБ GDDR6, 3840sp, 60 RT-ядер, 256 бит, доп. питание: 6+8 pin, 2 слота, miniDisplayPort, трассировка лучей",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/c97d40e1c00169ab2b9df625c1f54dff.jpeg",
         "image-2":"https://content2.onliner.by/catalog/device/large/36f5695eabbf1b0e2cc4fd216d48fb78.jpeg",
         "image-3":"https://content2.onliner.by/catalog/device/large/070206aecde64757635ca5fdff186d4b.jpeg"
@@ -184,7 +184,7 @@
         "title":"NVIDIA A30 24GB HBM2 900-21001-0040-000",
         "price":"13 121,45",
         "description":"NVIDIA A30 24 ГБ HBM2, 3804sp, 3072 бит, доп. питание: 8 pin, 2 слота",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/9c6fd98409565043989d89a88a2a2549.jpeg"
     },
     {
@@ -192,7 +192,7 @@
         "title":"NVIDIA A16 64GB 900-2G171-0000-000",
         "price":"9998,39",
         "description":"NVIDIA A16 64 ГБ GDDR6, доп. питание: 8 pin, 2 слота",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/22d2f32952902d1701d592999caa87b0.jpeg"
     },
     {
@@ -200,7 +200,7 @@
         "title":"PNY RTX A5000 24GB GDDR6 VCNRTXA5000-PB",
         "price":"8699,40",
         "description":"NVIDIA RTX A5000 24 ГБ GDDR6, 8192sp, 64 RT-ядер, 384 бит, доп. питание: 8 pin, 2 слота, DisplayPort, трассировка лучей",
-        "category":"Профессиональная",
+        "category":"Professional",
         "image":"https://content2.onliner.by/catalog/device/large/93a3ca292b3b1edf26f8859272f83b83.jpeg",
         "image-2":"https://content2.onliner.by/catalog/device/large/28ceded7e45fedeb974d713316f8db1a.jpeg",
         "image-3":"https://content2.onliner.by/catalog/device/large/13e8de4f674ea1cfa82fe3b2d0a307e0.jpeg"

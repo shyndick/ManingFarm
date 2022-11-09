@@ -16,7 +16,7 @@ export const Coin = observer(() => {
 
     useEffect(() => {
         loadList(id)
-    },[])
+    },[id])
 
     const goBack = () => {
         navigate('../coin-list')
@@ -25,12 +25,12 @@ export const Coin = observer(() => {
 
     return(
         <main>  
-            {loading && <div className="container coin_center"><div class="lds-circle"><div></div></div></div>}
+            {loading && <div className="container coin_center"><div className="lds-circle"><div></div></div></div>}
             {coinList.id && !loading &&
             <div className="container">
                 <div className="coin_title_back">
                     <h1 className="coin_title">{coinList.name}</h1>
-                    <button onClick={goBack} className='back'><i class="fa fa-undo" aria-hidden="true"></i></button>
+                    <button onClick={goBack} className='back'><i className="fa fa-undo" aria-hidden="true"></i></button>
                 </div>
                 
                 <CoinItem 

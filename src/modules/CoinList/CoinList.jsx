@@ -20,7 +20,7 @@ export const CoinList = observer(() => {
             <div className="container">
                 <h2 className="coin_title">Курс криптовалют</h2>
                 <CoinListName/>
-                {loading && <div className="container coin_center"><div class="lds-circle"><div></div></div></div>}
+                {loading && <div className="container coin_center"><div className="lds-circle"><div></div></div></div>}
                 
                 {!loading &&  list.map(({id, rank, name, volumeUsd24Hr, marketCapUsd, changePercent24Hr, priceUsd}) =>
                     <CoinListItem 
