@@ -1,8 +1,9 @@
 import {makeAutoObservable} from "mobx"
 
-export class CoinListStore {
-    list = [];
+export class CoinStore {
     loading = true
+
+    coinList = {}
 
     constructor() {
         makeAutoObservable(this, undefined, {
@@ -10,11 +11,11 @@ export class CoinListStore {
         })
     }
 
-    loadLists() {
-        fetch('https://api.coincap.io/v2/assets')
+    loadList(id) {
+        fetch(`https://api.coincap.io/v2/assets/${id}`)
             .then(response => response.json())
             .then(json => {
-                this.list = json.data
+                this.coinList = json.data
                 this.loading = false
             })
     }

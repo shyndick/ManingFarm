@@ -1,48 +1,32 @@
-.coin_list,
-.coin_list_name {
+.coin_item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
-
-/* .coin_list{
-    cursor: pointer;
-} */
-
-.coin_list:hover{
-    cursor: pointer;
-    box-shadow: inset 0px 0px 0px 1px #000;
-}
-
-.coin_title {
-    text-align: center;
-    padding: 25px;
-}
-
-.coin_list_item, 
-.coin_list_name_item {
     padding: 15px 0;
-    font-size: 21px;
 }
 
-.coin_list_item:first-child,
-.coin_list_name_item:first-child {
-    width: 14%;
-}
-
-.coin_list_item:not(:first-child), 
-.coin_list_name_item:not(:first-child) {
-    width: 21.5%;
-}
-
-.coin_list:nth-child(odd){
+.coin_item:nth-child(odd)
+ {
     background-color: #a19dd1;
 }
 
-.coin_list:last-child {
+.coin_item:hover {
+    box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+.coin_name,
+.coin_data {
+    width: 50%;
+    font-size: 21px;
+}
+
+.coin_item:last-child {
     margin-bottom: 25px;
 }
+
+.coin_center {
+    text-align: center;
+}
+
 
 .lds-circle {
     display: inline-block;
