@@ -9,7 +9,7 @@ class CatalogStore {
     }
 
     loadCategories = () => {
-        fetch('../../../data/category.js')
+        fetch('../../../data/data.json')
         .then(respone => console.log(respone.json()))
         // .then(json => {
         //     console.log(json)
