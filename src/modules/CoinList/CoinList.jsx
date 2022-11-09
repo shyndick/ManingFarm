@@ -18,7 +18,7 @@ export const CoinList = observer(() => {
         
         <main>
             <div className="container">
-                <h2>Курс криптовалют</h2>
+                <h2 className="coin_title">Курс криптовалют</h2>
                 <CoinListName/>
                 {loading && <div className="container coin_center"><div class="lds-circle"><div></div></div></div>}
                 

@@ -1,12 +1,14 @@
 import { observer } from "mobx-react-lite"
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import  {CoinItem}  from "./components/CoinItem"
 import {CoinStore} from "./srores/CoinStore"
 
 export const Coin = observer(() => {
 
     const {id} = useParams()
+
+    const navigate = useNavigate()
 
     const [coinStore] = useState(new CoinStore())
 
@@ -16,15 +18,21 @@ export const Coin = observer(() => {
         loadList(id)
     },[])
 
+    const goBack = () => {
+        navigate('../coin-list')
+    }
+
 
     return(
-        <>  
-            {loading && <div className="container coin_center"><div class="lds-circle"><div></div></div></div>
-                
-            }
+        <main>  
+            {loading && <div className="container coin_center"><div class="lds-circle"><div></div></div></div>}
             {coinList.id && !loading &&
             <div className="container">
-                <h1 className="coin_title">{coinList.name}</h1>
+                <div className="coin_title_back">
+                    <h1 className="coin_title">{coinList.name}</h1>
+                    <button onClick={goBack} className='back'><i class="fa fa-undo" aria-hidden="true"></i></button>
+                </div>
+                
                 <CoinItem 
                     rank = {coinList.rank}
                     symbol = {coinList.symbol}
@@ -38,6 +46,6 @@ export const Coin = observer(() => {
                     vwap24Hr = {coinList.vwap24Hr}/>
                 
             </div>}
-        </>
+        </main>
     )
 })

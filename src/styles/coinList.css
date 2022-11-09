@@ -29,6 +29,7 @@
 .coin_list_item:first-child,
 .coin_list_name_item:first-child {
     width: 14%;
+    padding-left: 10px;
 }
 
 .coin_list_item:not(:first-child), 
