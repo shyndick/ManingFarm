@@ -23,7 +23,7 @@
 .coin_list_item, 
 .coin_list_name_item {
     padding: 15px 0;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .coin_list_item:first-child,

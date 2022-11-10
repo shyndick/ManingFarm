@@ -1,20 +1,45 @@
-import {makeAutoObservable} from "mobx"
+import {makeAutoObservable, runInAction} from "mobx"
 
 class CatalogStore {
 
     categories = undefined
+    categoryIndex = 0
+    productsByCategory = undefined
+
+    manufacturer = undefined
 
     constructor () {
         makeAutoObservable(this)
     }
 
-    loadCategories = () => {
-        fetch('../../../data/data.json')
-        .then(respone => console.log(respone.json()))
-        // .then(json => {
-        //     console.log(json)
-        //     this.categories = [...json]
-        // })
+    setCategory = (index) => {
+        this.categoryIndex = index
+    }
+
+    loadCategories = async() => {
+        const response = await fetch('http://localhost:3000/category')
+        const json = await response.json()
+            runInAction(() => {
+                this.categories = [...json]
+            })
+    }
+
+    loadCategory = async(category) => {
+        console.log(category)
+        const response = await fetch(`http://localhost:3000/${category}`)
+        const json = await response.json()
+            runInAction(() => {
+                console.log(json)
+                this.productsByCategory = [...json]
+            })
+    }
+
+    loadManufacturer = async() => {
+        const response = await fetch('http://localhost:3000/manufacturer')
+        const json = await response.json()
+            runInAction(() => {
+                this.manufacturer = [...json]
+            })
     }
 }
 

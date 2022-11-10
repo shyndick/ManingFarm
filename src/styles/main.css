@@ -1,18 +1,239 @@
 main {
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     background-color: #f5f5f5;
     height: 100%;
 }
 
-.window_catalog {
-    background-image: url("../image/videokarta3.jpg");
-    width: 490px;
-    height: 700px;
-    border-radius: 10px;
-    box-shadow: inset;
+.main_window {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.window_catalog_title {
+.window_catalog {
+    background: url("../image/videokarta.jpg") ;
+    background-position: 50% 50%;
+    background-size:cover;
+    width: 35%;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 100px 96px 2px rgb(167, 88, 205, 0.9) inset inset;
+    -moz-box-shadow: 0px 100px 96px 2px rgb(167, 88, 205, 0.9) inset inset;
+    box-shadow: 0px 200px 96px 2px rgb(167, 88, 205, 0.9) inset;
+}
+
+.window_catalog_title,
+.window_services_title {
     color: #f5f5f5;
-    padding: 10px;
+    padding: 20px 20px 10px 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.window_catalog_subtitle {
+    color: #f5f5f5;
+    padding: 0 20px;
+    font-size: 18px;
+    margin-bottom: 280px;
+}
+
+.main_window_btn{
+    padding: 13px 25px;
+    border: none;
+    margin: 0 20px 20px 30px;
+    background-color: #6f5cea;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #f5f5f5;
+    cursor: pointer;
+
+}
+
+.windows_services {
+    width: 60%;
+}
+
+.windows_services_item {
+    height: 240px;
+}
+
+.windows_services_item:first-child {
+    background: url("../image/Bitcoin2.jpg") ;
+    background-position: 100% 55%;
+    background-size:cover;
+    -webkit-box-shadow: 300px 10px 100px 35px rgb(167, 88, 205, 0.9) inset;
+    -moz-box-shadow: 300px 10px 100px 35px rgb(167, 88, 205, 0.9) inset;
+    box-shadow: 300px 10px 100px 35px rgb(167, 88, 205, 0.9) inset;
+    border-radius: 10px;
+}
+
+.window_services_subtitle {
+    width: 50%;
+    color: #f5f5f5;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.main_services_btn {
+    background-color: #303239;
+    margin-top: 50px;
+}
+
+.windows_services_item:last-child {
+    background: url("../image/monety.jpg") ;
+    background-position: 50% 50%;
+    background-size:cover;
+    -webkit-box-shadow: 10px 10px 100px 100px rgb(167, 88, 205, 0.9) inset;
+    -moz-box-shadow: 10px 10px 100px 100px rgb(167, 88, 205, 0.9) inset;
+    box-shadow: 10px 10px 100px 100px rgb(167, 88, 205, 0.9) inset;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality_items {
+    width: calc(33.3% - 15px);
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    height: 120px;
+}
+
+.quality_items:not(:last-child){
+    margin-right: 15px;
+}
+
+.quality_item:first-child {
+    width: 130px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.quality_item i {
+    
+    color: #b6b5b8;
+    font-size: 40px;
+}
+
+.quality_item_title {
+    margin: 20px 0 10px 0;
+    color: #6f5cea;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.quality_item_subtitle {
+    padding-right: 20px;
+    color: #303239;
+    font-size: 15px;
+}
+
+.the_best {
+    font-size: 40px;
+}
+
+.best_imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin: 15px 0 20px;
+}
+
+.best_img:not(:last-child) {
+    margin-right: 50px;
+}
+
+.best_img img {
+    cursor: pointer;
+    width: calc(160px - 15px);
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.services_item {
+    width: calc(50% - 30px);
+    height: 300px;
+    
+}
+
+.services_item:first-child {
+    background: url("../image/service.jpg") ;
+    background-position: 80% 50%;
+    background-size:cover;
+    -webkit-box-shadow: 300px 0px 100px 0px rgb(167, 88, 205, 0.95) inset;
+    -moz-box-shadow: 300px 0px 100px 0px rgb(167, 88, 205, 0.95) inset;
+    box-shadow: 300px 0px 100px 0px rgb(167, 88, 205, 0.95) inset;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.services_item p{
+    font-size: 35px;
+    color: #fff;
+    width: 35%;
+    font-weight: bold;
+    padding: 20px 30px;
+}
+
+.services_item:last-child {
+    background: url("../image/ferm.png") ;
+    background-position: 80% 50%;
+    background-size:cover;
+    -webkit-box-shadow: 00px -100px 100px 0px rgb(167, 88, 205, 0.95) inset;
+    -moz-box-shadow: 00px -100px 100px 0px rgb(167, 88, 205, 0.95) inset;
+    box-shadow: 200px -100px 100px 0px rgb(167, 88, 205, 0.95) inset;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.consultation_item h2 {
+    width: 40%;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0px 20px 20px;
+    padding: 20px 0 0;
+}
+
+.consultation_item p {
+    width: 40%;
+    font-size: 15px;
+    color: #f5f5f5;
+    margin: 0px 20px
+}
+
+.consultation_item button {
+    margin: 20px 20px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+.consultation {
+    margin-top: 20px;
+    background: url("../image/male.jpeg") ;
+    background-position: 100% 40%;
+    background-size: 70% ;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 00px 0px 100px 10px rgb(167, 88, 205, 0.95) inset;
+    -moz-box-shadow: 00px 0px 100px 10px rgb(167, 88, 205, 0.95) inset;
+    box-shadow: 600px 0px 100px 10px rgb(167, 88, 205, 1) inset;
 }
