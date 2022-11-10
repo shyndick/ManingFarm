@@ -15,7 +15,7 @@ export const Catalog = observer(() => {
     useEffect(()=>{
         if(categories)
         loadCategory(categories[categoryIndex])
-    }, [categories])
+    }, [categories, categoryIndex])
 
     console.log(categoryIndex)
 

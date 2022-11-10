@@ -17,28 +17,32 @@ class CatalogStore {
     }
 
     loadCategories = async() => {
-        const response = await fetch('http://localhost:3000/category')
+        const response = await fetch('http://localhost:3000/videocard')
         const json = await response.json()
             runInAction(() => {
-                this.categories = [...json]
+                console.log(json[0].category)
+                this.categories = json[0].category
+                console.log(this.categories)
             })
     }
 
-    loadCategory = async(category) => {
-        console.log(category)
-        const response = await fetch(`http://localhost:3000/${category}`)
+    loadCategory = async(categor) => {
+        console.log(categor)
+        const response = await fetch(`http://localhost:3000/videocard`)
         const json = await response.json()
             runInAction(() => {
-                console.log(json)
-                this.productsByCategory = [...json]
+                this.productsByCategory = json[0].categor
+
+                console.log(this.productsByCategory)
             })
     }
 
     loadManufacturer = async() => {
-        const response = await fetch('http://localhost:3000/manufacturer')
+        const response = await fetch('http://localhost:3000/videocard')
         const json = await response.json()
             runInAction(() => {
-                this.manufacturer = [...json]
+                this.manufacturer = json[0].manufacturer
+                console.log(this.manufacturer)
             })
     }
 }
