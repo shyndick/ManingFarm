@@ -12,3 +12,12 @@
 .manufactur_btn:hover {
     opacity: 0.8;
 }
+
+.products_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products_item {
+    width: 33.3%;
+}
