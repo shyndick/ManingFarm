@@ -18,54 +18,6 @@ class CatalogVideocardStore {
         makeAutoObservable(this)
     }
 
-    // setCategory = (index) => {
-    //     this.categoryIndex = index
-    // }
-
-
-
-    // loadProducts = async() => {
-    //     const response = await fetch('http://localhost:3000/videocard')
-    //     const json = await response.json()
-    //         runInAction(() => {
-    //             this.products = json[0].products
-    //             this.isLoading = false
-    //         })
-    // }
-
-    // loadCategories = async() => {
-    //     const response = await fetch('http://localhost:3000/videocard')
-    //     const json = await response.json()
-    //         runInAction(() => {
-    //             this.categories = json[0].category
-    //         })
-    // }
-
-    // loadCategory = async(categor) => {
-    //     this.isLoading = true
-    //     const response = await fetch(`http://localhost:3000/videocard`)
-    //     const json = await response.json()
-    //         runInAction(() => {
-    //             switch(categor) {
-    //                 case "k4":
-    //                     this.productsByCategory = json[0].k4
-    //                     this.isLoading = false
-    //                 break;
-    //                 case "k2":
-    //                     this.productsByCategory = json[0].k2
-    //                     this.isLoading = false
-    //                 break;
-    //                 case "professional":
-    //                     this.productsByCategory = json[0].professional
-    //                     this.isLoading = false
-    //                 break
-    //             }
-                
-                
-                
-    //         })
-    // }
-
     setManufactur = (index) => {
         this.manufacturerIndex = index
     }

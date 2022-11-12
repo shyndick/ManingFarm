@@ -1,4 +1,5 @@
 import {makeAutoObservable} from "mobx"
+import { runInAction } from "mobx"
 
 export class CoinStore {
     loading = true
@@ -15,8 +16,11 @@ export class CoinStore {
         fetch(`https://api.coincap.io/v2/assets/${id}`)
             .then(response => response.json())
             .then(json => {
-                this.coinList = json.data
-                this.loading = false
+                runInAction(() => {
+                    this.coinList = json.data
+                    this.loading = false
+                })
+                
             })
     }
 }

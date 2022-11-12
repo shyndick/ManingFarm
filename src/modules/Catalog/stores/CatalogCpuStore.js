@@ -34,17 +34,14 @@ class CatalogCpuStore {
             switch(manufactur) {
                 case "products":
                     this.productsCpuByManufactur = json[0].products
-                    console.log(this.productsCpuByManufactur)
                     this.isLoadingC = false
                 break;
                 case "AMD":
                     this.productsCpuByManufactur = json[0].AMD
-                    console.log(this.productsCpuByManufactur)
                     this.isLoadingC = false
                 break;
                 case "Intel":
                     this.productsCpuByManufactur = json[0].Intel
-                    console.log(this.productsCpuByManufactur)
                     this.isLoadingC = false
                 break;
             }   
