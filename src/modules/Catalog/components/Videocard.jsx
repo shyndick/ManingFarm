@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
+import {VideocardItems} from "./VideocardItems"
 import catalogVideocardStore from "../stores/CatalogVideocardStore"
+import { GoBack } from "./GoBack"
 
 export const Videocard = observer(() => {
 
@@ -23,27 +25,54 @@ export const Videocard = observer(() => {
             loadManufactur(manufacturer[manufacturerIndex])
         }, [manufacturer, manufacturerIndex])
 
-    return(
-        <>
-            <div className="manufacturer">
-                    {manufacturer && manufacturer.map((manufactur, index) => 
-                        <button onClick={()=>{setManufactur(index)}} key={index} className='manufactur_btn'>{manufactur}</button>
-                    )
-                }
-            </div>
-            <div className="products_items">
-                    <div className="products_item">
-                {isLoading && <h2>Loading....</h2>}
-                {!isLoading && productsByManufactur && productsByManufactur.map((item, index) => 
-                    <div key={index}>
-                        <h3>{item.title}</h3>
-                        <h2>{item.category}</h2>
-                        <div>{item.price}</div>
-                    </div>)}
 
+
+        // <div className="container">
+
+        //         <GoBack/>
+
+        //         <div className="manufacturer_wrapper">
+
+        //             <div className="manufacturer">
+        //                 {manufacturerCpu && manufacturerCpu.map((manufacturCpu, index) => 
+        //                     <button onClick={()=>{setCpuManufactur(index)}} key={index} className='manufactur_btn'>{manufacturCpu}</button>
+        //                 )
+        //             }
+        //             </div>
+
+        //             <div className="cpu_wrapper">
+
+        //                 <CpuItems/>
+
+        //             </div>
+
+        //         </div>
+
+                
+
+        //     </div>
+
+    return(
+        <main>
+
+            <div className="container">
+
+                <GoBack/>
+
+                <div className="manufacturer_wrapper">
+                    <div className="manufacturer">
+                            {manufacturer && manufacturer.map((manufactur, index) => 
+                                <button onClick={()=>{setManufactur(index)}} key={index} className='manufactur_btn'>{manufactur}</button>
+                            )
+                        }
                     </div>
+                    <div className="cpu_wrapper">
+                        <VideocardItems/>
+                    </div>
+                </div>
+                
             </div>
-        </>
+        </main>
     )
 }
 )

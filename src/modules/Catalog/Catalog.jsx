@@ -1,12 +1,10 @@
 import { observer } from "mobx-react-lite"
-import { useEffect } from "react"
-import catalogVideocardStore from "./stores/CatalogVideocardStore"
-import catalogCpuStore from "./stores/CatalogCpuStore"
-import catalogMotherboardStore from "./stores/CatalogMotherboardStore"
+import { useEffect} from "react"
 import catalogTypeStore from "./stores/CatalogTypeStore"
-import { Videocard } from "./components/Videocard"
-import { Cpu } from "./components/Cpu"
-import { Motherboard } from "./components/Motherboard"
+import { VideocardItems } from "./components/VideocardItems"
+import { MotherboardItems } from "./components/MotherboardItems"
+import { CpuItems } from "./components/CpuItems"
+import { CatalogButton } from "./components/CatalogButton"
 
 export const Catalog = observer(() => {
 
@@ -16,21 +14,17 @@ export const Catalog = observer(() => {
         loadType()
     }, [])
 
-
     return (
         <main>
             <div className="container">
-
-                <div className="manufacturer">
-                    {type && type.map((manufactur, index) => 
-                        <button key={index} className='manufactur_btn'>{manufactur}</button>
-                    )
-                }
+                <div className="main_catalog_wrapper">
+                    <CatalogButton/>
+                    <div className="main_catalog_items">
+                        <VideocardItems/>
+                        <CpuItems/>
+                        <MotherboardItems/>
+                    </div>
                 </div>
-                    <Videocard/>
-                    <Cpu/>
-                    <Motherboard/>
-
             </div>
         </main>
     )

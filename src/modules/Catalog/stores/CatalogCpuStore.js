@@ -27,9 +27,11 @@ class CatalogCpuStore {
     }
 
     loadCpuManufactur = async(manufactur) => {
+        console.log(this.manufacturerCpuIndex)
         this.isLoadingC = true
         const response = await fetch('http://localhost:3000/cpu')
         const json = await response.json()
+        console.log(json)
         runInAction(() => {
             switch(manufactur) {
                 case "products":

@@ -20,31 +20,6 @@ class CatalogTypeStore {
                 this.type = json
             })
     }
-
-    // loadCpuManufactur = async(manufactur) => {
-    //     this.isLoadingC = true
-    //     const response = await fetch('http://localhost:3000/cpu')
-    //     const json = await response.json()
-    //     runInAction(() => {
-    //         switch(manufactur) {
-    //             case "products":
-    //                 this.productsCpuByManufactur = json[0].products
-    //                 console.log(this.productsCpuByManufactur)
-    //                 this.isLoadingC = false
-    //             break;
-    //             case "AMD":
-    //                 this.productsCpuByManufactur = json[0].AMD
-    //                 console.log(this.productsCpuByManufactur)
-    //                 this.isLoadingC = false
-    //             break;
-    //             case "Intel":
-    //                 this.productsCpuByManufactur = json[0].Intel
-    //                 console.log(this.productsCpuByManufactur)
-    //                 this.isLoadingC = false
-    //             break;
-    //         }   
-    //     })
-    // }
 }
 
 const catalogTypeStore = new CatalogTypeStore()
