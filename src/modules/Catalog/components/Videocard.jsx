@@ -26,32 +26,6 @@ export const Videocard = observer(() => {
         }, [manufacturer, manufacturerIndex])
 
 
-
-        // <div className="container">
-
-        //         <GoBack/>
-
-        //         <div className="manufacturer_wrapper">
-
-        //             <div className="manufacturer">
-        //                 {manufacturerCpu && manufacturerCpu.map((manufacturCpu, index) => 
-        //                     <button onClick={()=>{setCpuManufactur(index)}} key={index} className='manufactur_btn'>{manufacturCpu}</button>
-        //                 )
-        //             }
-        //             </div>
-
-        //             <div className="cpu_wrapper">
-
-        //                 <CpuItems/>
-
-        //             </div>
-
-        //         </div>
-
-                
-
-        //     </div>
-
     return(
         <main>
 

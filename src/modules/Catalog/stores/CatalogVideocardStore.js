@@ -2,12 +2,6 @@ import {makeAutoObservable, runInAction} from "mobx"
 
 class CatalogVideocardStore {
 
-    // products = undefined
-
-    // categories = undefined
-    // categoryIndex = 0
-    // productsByCategory = undefined
-
     manufacturer = undefined
     manufacturerIndex = 0
     productsByManufactur = undefined
@@ -23,16 +17,27 @@ class CatalogVideocardStore {
     }
 
     loadManufacturer = async() => {
+        try {
         const response = await fetch('http://localhost:3000/videocard')
+        if(response.status >= 400) {
+            throw new Error(`response Error ${response.status} - ${response.statusText}` )
+        }
         const json = await response.json()
             runInAction(() => {
                 this.manufacturer = json[0].manufacturer
             })
+        } catch (e){
+            console.log(e)
+        }
     }
 
     loadManufactur = async(manufactur) => {
         this.isLoading = true
+        try {
         const response = await fetch('http://localhost:3000/videocard')
+        if(response.status >= 400) {
+            throw new Error(`response Error ${response.status} - ${response.statusText}` )
+        }
         const json = await response.json()
         runInAction(() => {
             switch(manufactur) {
@@ -78,6 +83,9 @@ class CatalogVideocardStore {
                 break;
             }   
         })
+    } catch (e) {
+        console.log(e)
+    }
     }
 }
 
