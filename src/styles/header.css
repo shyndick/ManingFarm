@@ -60,7 +60,7 @@
 }
 
 .nav_link:hover,
-.active {
+.nav .active {
     border-bottom: #a19dd1 2px solid;
     padding-bottom: 10px;
 }

@@ -24,12 +24,11 @@ export class ProductStore {
             }
             const json = await response.json()
             runInAction(()=>{
-                this.productData = json[0]
-                console.log(this.productData)
+                this.productData = {...json[0]}
                 this.idProductLoading = false
             })
         } catch (e) {
-            
+            //code
         }finally {
             //code
         }
