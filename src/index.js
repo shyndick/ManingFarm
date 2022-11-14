@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'antd/dist/antd.min.css';
 import '../src/styles/footer.css'
 import '../src/styles/style.css'
 import '../src/styles/main.css'

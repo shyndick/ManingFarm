@@ -23,14 +23,14 @@ export const VideocardItems = observer(() => {
                     <div className="products_item">
                 {isLoading && <h2>Loading....</h2>}
                 {!isLoading && productsByManufactur && productsByManufactur.map((item, index) => 
-                    <div  key={index} className="catalog_item">
-                        <div className="videocard_item_img">
-                            <img src={item.image} alt={item.title} />
-                        </div>
-                        <h3><Link to={`./${item.id}`}>{item.title}</Link></h3>
-                        <p>{item.category}</p>
-                        <p>от {item.price} р</p>
-                    </div>)}
+                    <div key={index} className="catalog_item">
+                    <div className="catalog_item_img">
+                        <img src={item.images.header} alt={item.name} />
+                    </div>
+                    <h3><Link to={`./${item.id}`}>{item.extended_name}</Link></h3>
+                    <p>{item.micro_description}</p>
+                    <p>от {item.prices.price_min.amount} р</p>
+                </div>)}
 
                     </div>
             </div>

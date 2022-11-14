@@ -57,24 +57,12 @@ class CatalogVideocardStore {
                     this.productsByManufactur = json[0].MSI
                     this.isLoading = false
                 break
-                case "ASROCK":
+                case "AFOX":
                     this.productsByCategory = json[0].ASROCK
                     this.isLoading = false
                 break;
                 case "ASUS":
                     this.productsByManufactur = json[0].ASUS
-                    this.isLoading = false
-                break;
-                case "PNY":
-                    this.productsByManufactur = json[0].PNY
-                    this.isLoading = false
-                break
-                case "Dell":
-                    this.productsByManufactur = json[0].Dell
-                    this.isLoading = false
-                break
-                case "AMD":
-                    this.productsByManufactur = json[0].AMD
                     this.isLoading = false
                 break;
                 case "NVIDIA":

@@ -15,17 +15,14 @@ export const CatalogButton = observer(() => {
 
     const handleClickVideocard = () => {
         navigate(`./${type[0]}`)
-        console.log(type[0])
     }
 
     const handleClickCpu = () => {
         navigate(`./${type[1]}`)
-        console.log(type[1])
     }
 
     const handleClickMotherboard = () => {
         navigate(`./${type[2]}`)
-        console.log(type[2])
     }
 
     return(

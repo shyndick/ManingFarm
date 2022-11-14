@@ -5,6 +5,7 @@ import { VideocardItems } from "./components/VideocardItems"
 import { MotherboardItems } from "./components/MotherboardItems"
 import { CpuItems } from "./components/CpuItems"
 import { CatalogButton } from "./components/CatalogButton"
+import { AllProduct } from "./components/AllProducts"
 
 export const Catalog = observer(() => {
 
@@ -20,9 +21,7 @@ export const Catalog = observer(() => {
                 <div className="main_catalog_wrapper">
                     <CatalogButton/>
                     <div className="main_catalog_items">
-                        <VideocardItems/>
-                        <CpuItems/>
-                        <MotherboardItems/>
+                        <AllProduct/>
                     </div>
                 </div>
             </div>
