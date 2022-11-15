@@ -3,8 +3,8 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import {ProductStore} from "./stores/ProductStore"
 import { Image } from 'antd';
-import {GoBack} from '../Catalog/components/GoBack'
-import cartStore from "../Cart/stores/CartStore";
+import {GoBack} from '../components/GoBack'
+import cartStore from "../../Cart/stores/CartStore";
 
 export const Product = observer(() => {
 

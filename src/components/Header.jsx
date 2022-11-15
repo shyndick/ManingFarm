@@ -7,7 +7,7 @@ import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
 
 export const Header = observer(() => {
 
-    const {CartCount, CartPrices} = cartStore
+    const {cartCount, cartPrices} = cartStore
 
     return (
         <header >
@@ -39,7 +39,7 @@ export const Header = observer(() => {
                         <NavLink className="nav_link" to="/delivery">Доставка</NavLink>
                     </div>
                     <div className="nav_cart">
-                        <NavLink to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i>{CartCount} - {CartPrices}</NavLink>
+                        <NavLink to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i>{cartCount} - {cartPrices}</NavLink>
                     </div>
                 </div>
             </div>

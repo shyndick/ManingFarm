@@ -10,7 +10,8 @@ class CartStore {
         })
     }
 
-    get CartCount () {
+
+    get cartCount () {
         let allCount = 0
         this.cart.forEach(({count}) => {
             allCount += count;
@@ -18,13 +19,13 @@ class CartStore {
         return  allCount
     }
 
-    get CartPrices () {
+    get cartPrices () {
         let allPrices = 0
         this.cart.forEach(({count, prices}) => {
 
             allPrices = allPrices + (count*prices.price_min.amount)
         })
-        return  allPrices
+        return  allPrices.toFixed(2)
     }
 
     addToCart (product) {
@@ -37,6 +38,16 @@ class CartStore {
         }
         localStorage.setItem('cart', JSON.stringify(this.cart))
         console.log(this.cart)
+    }
+
+    deleteCartItem (cartItemId) {
+        this.cart = this.cart.filter(({id}) => id !== cartItemId)
+        localStorage.setItem('cart', JSON.stringify(this.cart))
+    }
+
+    deleteAllCart () {
+        localStorage.removeItem('cart')
+        this.cart= []
     }
 }
 
