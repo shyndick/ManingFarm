@@ -21,7 +21,10 @@ export const Cpu = observer(() => {
 
             <div className="container">
 
-                <GoBack/>
+                <div className="category_wrapper">
+                    <h1>Процессоры</h1>
+                    <GoBack/>
+                </div>
 
                 <div className="manufacturer_wrapper">
 

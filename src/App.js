@@ -20,6 +20,12 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout/>}>
+          <Route path="/videocard" element={<Videocard/>}></Route>
+          <Route path="/videocard/:productId" element={<Product/>}></Route>
+          <Route path="/cpu" element={<Cpu/>}></Route>
+          <Route path="/cpu/:productId" element={<Product/>}></Route>
+          <Route path="/motherboard" element={<Motherboard/>}></Route>
+          <Route path="/motherboard/:productId" element={<Product/>}></Route>
           <Route index element={<Main/>}></Route>
           <Route path="catalog" element={<Catalog/>}></Route>
           <Route path="catalog/:productId" element={<Product/>}></Route>

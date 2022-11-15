@@ -11,7 +11,7 @@ export const GoBack = () => {
     
     return(
         <div className="go_back">
-                <button onClick={goBack} className="manufactur_btn">назад</button>
+                <button onClick={goBack} className='back'><i className="fa fa-undo" aria-hidden="true"></i></button>
         </div>
     )
 }

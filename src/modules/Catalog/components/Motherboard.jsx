@@ -24,7 +24,11 @@ export const Motherboard = observer(() => {
     return(
         <main>
             <div className="container">
-                <GoBack/>
+
+                <div className="category_wrapper">
+                    <h1>Материнские карты</h1>
+                    <GoBack/>
+                </div>
 
                 <div className="manufacturer_wrapper">
 

@@ -11,7 +11,7 @@ class CatalogAllProductStore{
 
     loadAllProducts = async() => {
         this.isLoadingP = true
-        const response = await fetch('http://localhost:3000/allProduct')
+        const response = await fetch('http://localhost:3000/allProduct?_sort=id&_order=asc')
         const json = await response.json()
             runInAction(() => {
                 this.allProducts = [...json]

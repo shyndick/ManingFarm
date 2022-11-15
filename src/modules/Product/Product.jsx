@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import {ProductStore} from "./stores/ProductStore"
 import { Image } from 'antd';
 import {GoBack} from '../Catalog/components/GoBack'
+import cartStore from "../Cart/stores/CartStore";
 
 export const Product = observer(() => {
 
@@ -11,8 +12,11 @@ export const Product = observer(() => {
     const [productStore] = useState(new ProductStore())
     const {loadProduct, productData, idProductLoading} = productStore
     const {full_name, name_prefix, images, description, prices } = productData
+    const {addToCart, cart} = cartStore
 
-    
+    const handleClick = () => {
+        addToCart(productData)
+    }
 
     useEffect(()=> {
         if(productId) {
@@ -30,6 +34,7 @@ export const Product = observer(() => {
                                         <p>{description}</p>
                                         <Image src={images.header} alt={full_name} />
                                         <p>от {prices.price_min.amount} р</p>
+                                        <button onClick={handleClick} className="add_to_card">Добавить в корзину</button>
                                     </div>}
         </div>
     )

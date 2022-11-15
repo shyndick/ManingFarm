@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom"
 import Logo  from "../image/logo.png"
 import { ContactMessege } from "./ContactMessege"
+import cartStore from "../modules/Cart/stores/CartStore"
+import { observer } from "mobx-react-lite"
+import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
 
-export const Header = () => {
+export const Header = observer(() => {
+
+    const {CartCount, CartPrices} = cartStore
+
     return (
         <header >
             <div className="info">
@@ -24,17 +30,20 @@ export const Header = () => {
                     </div>
                     <div className='nav_wrapper'>
                         <NavLink className="nav_link" to="/">Главная</NavLink>
-                        <NavLink className="nav_link" to="/catalog">Каталог</NavLink>
+                        <div className="dropdown">
+                            <NavLink className="nav_link" to="/catalog">Каталог</NavLink>
+                            <CatalogButton/>
+                        </div>
                         <NavLink className="nav_link" to="/coin-list">Курс крипты</NavLink>
                         <NavLink className="nav_link" to="/contacts">Контакты</NavLink>
                         <NavLink className="nav_link" to="/delivery">Доставка</NavLink>
                     </div>
                     <div className="nav_cart">
-                        <NavLink to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></NavLink>
+                        <NavLink to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i>{CartCount} - {CartPrices}</NavLink>
                     </div>
                 </div>
             </div>
         </header>
     )
     
-}
+})

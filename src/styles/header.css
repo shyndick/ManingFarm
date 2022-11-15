@@ -1,3 +1,44 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .manufacturer{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown button {
+    background: #fff;
+    color: #303239;
+    box-shadow: none;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown .manufacturer button:hover {
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.manufacturer button:hover {
+    background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .manufacturer {
+    display: block;
+}
+
+
 .info{
     background-color: #303239;
     height: 70px;
