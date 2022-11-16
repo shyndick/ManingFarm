@@ -39,7 +39,13 @@ export const Header = observer(() => {
                         <NavLink className="nav_link" to="/delivery">Доставка</NavLink>
                     </div>
                     <div className="nav_cart">
-                        <NavLink to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i>{cartCount} - {cartPrices}</NavLink>
+                        <NavLink to="/cart">
+                            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+                            {cartPrices && cartCount && <div className="nav_cart_price">
+                                <p>{cartPrices} BYN</p>
+                                <p>{cartCount} товар</p>     
+                            </div>}
+                            </NavLink>
                     </div>
                 </div>
             </div>

@@ -1,21 +1,11 @@
-import {ModalCart} from "../../components/ModalCart"
+import App from "../Cart/components/ModalCart"
 import { observer } from "mobx-react-lite"
 import { GoBack } from "../Catalog/components/GoBack"
 import { CartItem } from "./components/CartItem"
 import cartStore from "./stores/CartStore"
-import { useState } from "react"
 
 export const Cart = observer(() => {
     const {cart, deleteCartItem, cartPrices, deleteAllCart} = cartStore
-    const [visibile, setVIsibile] = useState(false)
-
-    const openModal = () => {
-        setVIsibile(true)
-    }
-
-    const handleModalClose = () => {
-        setVIsibile(false)
-    }
 
 
     return (
@@ -27,16 +17,24 @@ export const Cart = observer(() => {
                     <GoBack/>
                     {console.log(cart)}
                 </div>
-                {cart.length === 0 && <h2>Корзина пуста</h2>}
-                {cart.length > 0 && cart.map((cartItem) => 
-                    <CartItem cartItem={cartItem} deleteCartItem={deleteCartItem} key={cartItem.id}/>
-                )} 
+                    {cart.length === 0 && <h2>Корзина пуста</h2>}
+                <ul>
+                    {cart.length > 0 && cart.map((cartItem) => 
+                        <CartItem cartItem={cartItem} deleteCartItem={deleteCartItem} key={cartItem.id}/>
+                    )}
+                </ul>
+            
+                {cart.length > 0 && (
+                <div className="all_prices">
+                    <div className="prices_title">
+                        <p >Итого: </p>
+                        <p>{cartPrices} BYN</p>
+                    </div>
+                    <App title='cart Modal'  cart={cart} deleteAllCart = {deleteAllCart}/>
+                </div>)}
+                
+                
             </div>
-            <div className="all_prices">
-                <p>{cartPrices}</p>
-            </div>
-            <button onClick={openModal}>zakaz</button>
-            {visibile && <ModalCart onClose={handleModalClose} title='cart Modal' cart={cart} deleteAllCart = {deleteAllCart}/>}
         </main>
         
         
