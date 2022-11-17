@@ -239,3 +239,7 @@ main {
     -moz-box-shadow: 00px 0px 100px 10px rgb(167, 88, 205, 0.95) inset;
     box-shadow: 600px 0px 100px 10px rgb(167, 88, 205, 1) inset;
 }
+
+.consultation .container {
+    background-color: rgb(167, 88, 205, 0);
+}

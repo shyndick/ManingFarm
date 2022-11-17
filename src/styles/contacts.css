@@ -1,0 +1,9 @@
+.compani_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compani_text {
+    margin-right: 20px;
+}

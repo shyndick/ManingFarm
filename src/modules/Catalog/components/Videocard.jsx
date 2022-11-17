@@ -3,6 +3,7 @@ import { observer } from "mobx-react-lite"
 import {VideocardItems} from "./VideocardItems"
 import catalogVideocardStore from "../stores/CatalogVideocardStore"
 import { GoBack } from "./GoBack"
+import { Videocardtext } from "./VideocartText"
 
 export const Videocard = observer(() => {
 
@@ -47,7 +48,7 @@ export const Videocard = observer(() => {
                         <VideocardItems/>
                     </div>
                 </div>
-                
+                <Videocardtext/>
             </div>
         </main>
     )

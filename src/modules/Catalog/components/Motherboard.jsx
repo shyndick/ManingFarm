@@ -5,6 +5,7 @@ import catalogMotherboardStore from "../stores/CatalogMotherboardStore"
 import { MotherboardItems } from "./MotherboardItems"
 import {GoBack} from "./GoBack"
 import { CatalogButton } from "./CatalogButton"
+import { MotherboardText } from "./MotherboardText"
 
 export const Motherboard = observer(() => {
 
@@ -44,6 +45,7 @@ export const Motherboard = observer(() => {
                     </div>
 
                 </div>
+                <MotherboardText/>
             </div>
         </main>
     )

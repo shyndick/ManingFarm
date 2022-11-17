@@ -30,7 +30,7 @@
     width: 20%;
     text-align: center;
     color: #6f5cea;
-    font-size: 21px;
+    font-size: 19px;
 }
 
 
@@ -107,5 +107,27 @@
     display: block;
     flex: 0 0 23%;
     max-width: 33.33333333%;
+}
+
+.cart_null h2 {
+    text-align: center;
+}
+
+.cart_img_null {
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.cart_img_null img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+
+}
+h1 {
+    margin: 0;
 }
 

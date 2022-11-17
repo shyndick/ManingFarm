@@ -25,6 +25,7 @@ export class ProductStore {
             const json = await response.json()
             runInAction(()=>{
                 this.productData = {...json[0]}
+                this.productData.count = 0
                 this.idProductLoading = false
             })
         } catch (e) {

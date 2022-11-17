@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite"
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
+import { CoinListText } from "../CoinList/components/CoilListText"
 import  {CoinItem}  from "./components/CoinItem"
 import {CoinStore} from "./srores/CoinStore"
 
@@ -24,11 +25,11 @@ export const Coin = observer(() => {
 
 
     return(
-        <main>  
-            {loading && <div className="container coin_center"><div className="lds-circle"><div></div></div></div>}
+        <main> <div className="container"> 
+            {loading && <div className="coin_center"><div className="lds-circle"><div></div></div></div>}
             {coinList.id && !loading &&
-            <div className="container">
-                <div className="coin_title_back">
+            
+               <> <div className="coin_title_back">
                     <h1 className="coin_title">{coinList.name}</h1>
                     <button onClick={goBack} className='back'><i className="fa fa-undo" aria-hidden="true"></i></button>
                 </div>
@@ -45,7 +46,9 @@ export const Coin = observer(() => {
                     volumeUsd24Hr = {coinList.volumeUsd24Hr}
                     vwap24Hr = {coinList.vwap24Hr}/>
                 
-            </div>}
+           </> }
+                <CoinListText/>
+           </div>
         </main>
     )
 })

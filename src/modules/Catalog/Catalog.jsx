@@ -3,6 +3,7 @@ import { useEffect} from "react"
 import catalogTypeStore from "./stores/CatalogTypeStore"
 import { CatalogButton } from "./components/CatalogButton"
 import { AllProduct } from "./components/AllProducts"
+import { CatalogText } from "./components/Catalogtext"
 
 export const Catalog = observer(() => {
 
@@ -21,6 +22,7 @@ export const Catalog = observer(() => {
                         <AllProduct/>
                     </div>
                 </div>
+                <CatalogText/>
             </div>
         </main>
     )

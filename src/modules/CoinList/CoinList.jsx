@@ -1,5 +1,6 @@
 import {observer} from "mobx-react-lite"
 import { useEffect, useState } from "react"
+import { CoinListText } from "./components/CoilListText"
 import { CoinListItem } from "./components/CoinListItem"
 import { CoinListName } from "./components/CoinListName"
 import {CoinListStore} from "./stores/CoinListStore"
@@ -18,7 +19,7 @@ export const CoinList = observer(() => {
         
         <main>
             <div className="container">
-                <h2 className="coin_title">Курс криптовалют</h2>
+                <h1 className="coin_title">Курс криптовалют</h1>
                 <CoinListName/>
                 {loading && <div className="container coin_center"><div className="lds-circle"><div></div></div></div>}
                 
@@ -34,6 +35,7 @@ export const CoinList = observer(() => {
                         priceUsd={priceUsd}
                     /> 
                 )}
+                <CoinListText/>
             </div>
         </main>
     )

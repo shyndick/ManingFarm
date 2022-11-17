@@ -16,6 +16,8 @@
 .coin_title{
     text-align: center;
     padding: 25px;
+    margin: 0;
+    font-weight: bold;
 }
 
 .coin_item:hover {

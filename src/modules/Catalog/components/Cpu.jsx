@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
 import { CpuItems } from "./CpuItems"
 import { GoBack } from "./GoBack"
+import { CpuText } from "./CpuText"
 
 export const Cpu = observer(() => {
 
@@ -43,7 +44,7 @@ export const Cpu = observer(() => {
 
                 </div>
 
-                
+                <CpuText/>
 
             </div>
 

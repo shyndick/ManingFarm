@@ -17,9 +17,14 @@ export const CatalogProductCard = ({productCard}) => {
                 <Image src={images.header} alt={name} />
             </div>
             <h3><Link to={`./${id}`}>{extended_name}</Link></h3>
-            <p>{micro_description}</p>
-            <p>от {prices.price_min.amount} р</p>
-            <button onClick={handleClick} className="add_to_card">Добавить в корзину</button>
+            <p className="catalog_micro_desiner">{micro_description}</p>
+            <div className="catalog_price_bnt">
+                <p>от {prices.price_min.amount} BYN</p>
+                <button onClick={handleClick} className="add_to_card">
+                    <i className="fa fa-cart-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+            
         </div>
     )
 }

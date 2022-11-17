@@ -9,6 +9,7 @@ import '../src/styles/coinList.css'
 import '../src/styles/coin.css'
 import '../src/styles/catalog.css'
 import '../src/styles/cart.css'
+import '../src/styles/contacts.css'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 

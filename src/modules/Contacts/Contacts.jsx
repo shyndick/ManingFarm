@@ -1,8 +1,13 @@
+
+import { CompaniText } from "./components/CompaniText"
+
+
+
 export const Contacts = () => {
     return(
         <main>
             <div className="container">
-                <h1>Контакты</h1>
+                <CompaniText/>
             </div>
         </main>
     )
