@@ -1,6 +1,8 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 78px;
+    margin-right: 20px;
 }
 
 .dropdown .manufacturer{
@@ -33,7 +35,9 @@
 
 /* Change color of dropdown links on hover */
 .manufacturer button:hover {
-    background-color: #ddd;}
+    background-color: #6f5cea;
+    color: #f5f5f5;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .manufacturer {

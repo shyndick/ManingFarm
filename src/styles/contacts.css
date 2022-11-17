@@ -7,3 +7,20 @@
 .compani_text {
     margin-right: 20px;
 }
+
+.compani_img img{
+    border-radius: 10px;
+    width: 500px;
+}
+
+.compani_img h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #6f5cea;
+    margin: 20px 0;
+}
+
+.contact_best {
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -149,6 +149,7 @@ main {
     padding: 20px 0;
     border-radius: 10px;
     margin: 15px 0 20px;
+    padding-bottom: 20px;
 }
 
 .best_img:not(:last-child) {
@@ -242,4 +243,13 @@ main {
 
 .consultation .container {
     background-color: rgb(167, 88, 205, 0);
+}
+
+.nav_cart {
+    width: 170px;
+    text-align: center;
+}
+
+.nav_cart a.active {
+    border-bottom: none;
 }

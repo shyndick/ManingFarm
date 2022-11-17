@@ -2,6 +2,7 @@ import Contact from "../../../image/contact.png"
 
 export const CompaniText = () => {
     return(
+    <>
         <div className="compani_wrapper">
                     <div className="compani_text">
                         <h1>О компании</h1>
@@ -16,11 +17,15 @@ export const CompaniText = () => {
 </ul>
 Miner Base — компания, которая дорожит своей репутацией. Мы сотрудничаем только с проверенными поставщиками, а все компетенции на нашей стороне подтверждаются довольными клиентами. Каждый клиент — колоссальная ценность для нашей компании, мы бережно относимся не только к вашему оборудованию, но и к вашему бюджету.
 </p>
-<h2>На связи 24/7!</h2>
+
                     </div>
                     <div className="compani_img">
                         <img src={Contact} alt="contact" />
+                        <h2>На связи 24/7!</h2>
                     </div>
                 </div>
+                
+
+            </>
     )
 }

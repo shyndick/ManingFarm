@@ -12,6 +12,7 @@ import { Cpu } from "./modules/Catalog/components/Cpu";
 import { Motherboard } from "./modules/Catalog/components/Motherboard"
 import { Product } from "./modules/Catalog/Product/Product";
 import { CatalogApp } from "./modules/Catalog/CatalogApp";
+import { Servise } from "./modules/Servise/Servise";
 
 
 
@@ -33,7 +34,7 @@ function App() {
           <Route path="coin-list" element={<CoinList/>}></Route>
           <Route path="coin-list/:id" element={<Coin/>}></Route>
           <Route path="contacts" element={<Contacts/>}></Route>
-          <Route path="delivery" element={<Delivery/>}></Route>
+          <Route path="servise" element={<Servise/>}></Route>
           <Route path="cart" element={<Cart/>}></Route>
         </Route>
       </Routes>
