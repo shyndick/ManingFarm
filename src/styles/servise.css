@@ -1,0 +1,34 @@
+.service_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servise_wrapper .services:first-child .services_item:first-child{
+    background: url("../image/service3.jpg") ;
+    background-position: 50% 50%;
+    background-size:cover;
+}
+
+.servise_wrapper .services:first-child .services_item:last-child{
+    background: url("../image/service4.jpg") ;
+    background-position: 70% 50%;
+    background-size:cover;
+}
+
+.servise_wrapper .services:last-child .services_item:first-child{
+    background: url("../image/service1.jpg") ;
+    background-position: 50% 50%;
+    background-size:cover;
+}
+
+.servise_wrapper .services:last-child .services_item:last-child{
+    background: url("../image/service2.jpeg") ;
+    background-position: 70% 50%;
+    background-size:cover;
+}
+
+.services_item p{
+    width: 50%;
+    line-height: 35px;
+}
