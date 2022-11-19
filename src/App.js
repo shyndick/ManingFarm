@@ -5,6 +5,8 @@ import { Contacts } from  "./modules/Contacts/Contacts";
 import { Layout } from "./modules/Layout/Layout";
 import { Cart } from "./modules/Cart/Cart";
 import { Coin} from "./modules/Coin/Coin"
+import { Delivery} from "./modules/Delivery/Delivery"
+import { Guarantee} from "./modules/Guarantee/Guarantee"
 import { CatalogApp } from "./modules/Catalog/CatalogApp";
 import { CatalogAppMain } from "./modules/Catalog/CatalogAppMain";
 import { ServiceApp } from "./modules/Servise/ServiceApp";
@@ -26,6 +28,8 @@ function App() {
           <Route path="/service/maning" element={<Maning/>}></Route>
           <Route path="/service/ferm" element={<Ferm/>}></Route>
           <Route path="/service/consultation" element={<Consultation/>}></Route>
+          <Route path="guarantee" element={<Guarantee/>}></Route>
+          <Route path="delivery" element={<Delivery/>}></Route>
           <Route index element={<Main/>}></Route>
           <Route path="catalog/*" element={<CatalogApp/>}></Route>
           <Route path="coin-list" element={<CoinList/>}></Route>

@@ -22,9 +22,6 @@ export const Consultation = () => {
                     <li>Готовы помочь с доставкой в ремонт и обратно.</li>
                 </ul>
                 </div>
-                <div className="ferm_img">
-                    <img src={Ferma} alt="Ремонт-фермы" />
-                </div>
             </div>
         </main>
     )
