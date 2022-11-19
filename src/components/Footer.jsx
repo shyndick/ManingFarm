@@ -9,22 +9,21 @@ export const Footer = () => {
                     <div className="f_item">
                         <p className="f_title">Инфомация</p>
                         <NavLink to="/contacts">Контакты</NavLink>
-                        <NavLink to="/info">O компании</NavLink>
+                        <NavLink to="/company">O компании</NavLink>
                         <NavLink to="/delivery">Доставка и оплата</NavLink>
-                        <NavLink to="/politica">Политика</NavLink>
+                        <NavLink to="/company">Политика</NavLink>
                     </div>
                     <div className="f_item">
                         <p className="f_title">Служба поддежки</p>
                         <NavLink to="/guarantee">Гарантия/Возврат</NavLink>
-                        <NavLink to="/contacts">Обратная связь</NavLink>
-                        <NavLink to="/map">Карта сайта</NavLink>
+                        <NavLink to="/service/consultation">Обратная связь</NavLink>
                     </div>
                     <div className="f_item">
                         <p className="f_title">Покупателям</p>
                         <NavLink to="/catalog">Каталог</NavLink>
-                        <NavLink to="/info">Услуги</NavLink>
-                        <NavLink to="/delivery">Майнинг под ключ</NavLink>
-                        <NavLink to="/politica">Сборка ферм</NavLink>
+                        <NavLink to="/servise">Услуги</NavLink>
+                        <NavLink to="/service/maning">Майнинг под ключ</NavLink>
+                        <NavLink to="/service/ferm">Сборка ферм</NavLink>
                     </div>
                     <div className="f_item">
                         <p className="f_title">Контактная инфомация</p>

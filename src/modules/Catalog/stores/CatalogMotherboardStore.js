@@ -1,9 +1,3 @@
-// "products",
-//             "Gigabyte",
-//             "ASUS",
-//             "MSI",
-//             "ASRock",
-//             "BIOSTAR"
 
 import {makeAutoObservable, runInAction} from "mobx"
 

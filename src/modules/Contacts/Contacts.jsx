@@ -10,9 +10,6 @@ export const Contacts = () => {
         <main>
             <div className="container">
                 <CompaniText/>
-                <Quality/>
-                <h2 className="contact_best">Проверенные временем производители</h2>
-                <Best/>
             </div>
         </main>
     )

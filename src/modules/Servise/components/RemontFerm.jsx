@@ -1,6 +1,6 @@
 import Ferma from "../../../image/service4.jpg"
 
-export const Remont = () => {
+export const RemontFerm = () => {
     return(
         <main>
             <div className="container">
@@ -23,7 +23,7 @@ export const Remont = () => {
                 </ul>
                 </div>
                 <div className="ferm_img">
-                    <img src={Ferma} alt="ферма" />
+                    <img src={Ferma} alt="Ремонт-фермы" />
                 </div>
             </div>
         </main>

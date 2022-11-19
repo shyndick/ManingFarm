@@ -36,7 +36,7 @@ export const Header = observer(() => {
                         </div>
                         <NavLink className="nav_link" to="/coin-list">Курс крипты</NavLink>
                         <NavLink className="nav_link" to="/servise">Услуги</NavLink>
-                        <NavLink className="nav_link" to="/contacts">Контакты</NavLink>
+                        <NavLink className="nav_link" to="/company">О компании</NavLink>
                     </div>
                     <div className="nav_cart">
                         <NavLink to="/cart">

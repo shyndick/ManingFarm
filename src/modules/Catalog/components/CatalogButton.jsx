@@ -13,16 +13,25 @@ export const CatalogButton = observer(() => {
 
     const navigate = useNavigate();
 
+    const navigateCatalog = window.location.pathname.toString().substring(0, 8)
+
     const handleClickVideocard = () => {
+        console.log(navigateCatalog)
+        if(navigateCatalog === '/catalog')
         navigate(`./${type[0]}`)
+        else navigate(`./catalog/${type[0]}`)
     }
 
     const handleClickCpu = () => {
+        if(navigateCatalog === '/catalog')
         navigate(`./${type[1]}`)
+        else navigate(`./catalog/${type[1]}`)
     }
 
     const handleClickMotherboard = () => {
+        if(navigateCatalog === '/catalog')
         navigate(`./${type[2]}`)
+        else navigate(`./catalog/${type[2]}`)
     }
 
     return(

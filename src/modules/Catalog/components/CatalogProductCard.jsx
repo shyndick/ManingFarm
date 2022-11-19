@@ -4,7 +4,7 @@ import { Image } from "antd"
 
 export const CatalogProductCard = ({productCard}) => {
 
-    const {name, images, id, extended_name, micro_description, prices} = productCard
+    const {name, images, id, extended_name, micro_description, prices, name_prefix} = productCard
     const {addToCart, cart} = cartStore
 
     const handleClick = () => {

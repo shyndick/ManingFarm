@@ -1,10 +1,10 @@
 import Ferma from "../../../image/service4.jpg"
 
-export const Remont = () => {
+export const Razgon = () => {
     return(
         <main>
             <div className="container">
-                <h1>Ремонт видеокарт</h1>
+                <h1>Разгон видеокарт</h1>
                 <div className="maning_item">
                     <p>Отремонтируем видеокарту ноутбука или стационарного компьютера на базе чипов Intel, Nvidia, ATI. Работаем с ноутбуками мировых производителей Acer, Asus, eMachines, Lenovo, LG, HP, Samsung, Sony. Чиним и обслуживаем видеокарты брендов AMD, ASRock, ASUS, Biostar, Colorful, Gainward, Gigabyte, Inno3D, Palit, MSI, ZOTAC.
 Проконсультируем по возможным поломкам. Поможем определиться с оптимальным решением в ремонте.
@@ -23,7 +23,7 @@ export const Remont = () => {
                 </ul>
                 </div>
                 <div className="ferm_img">
-                    <img src={Ferma} alt="ферма" />
+                    <img src={Ferma} alt="Ремонт-фермы" />
                 </div>
             </div>
         </main>

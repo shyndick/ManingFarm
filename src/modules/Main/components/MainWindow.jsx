@@ -5,7 +5,15 @@ export const MainWindow = () => {
     const navigate = useNavigate()
 
     const goCatalog = () => {
-        navigate('/catalog')
+        navigate('./catalog')
+    }
+
+    const goService = () => {
+        navigate('./service/consultation')
+}
+
+    const goManing = () => {
+        navigate('./service/maning')
     }
 
     return(
@@ -19,12 +27,12 @@ export const MainWindow = () => {
                 <div className="windows_services_item">
                     <div className="window_services_title">Доверяй профессионалам</div>
                     <div className="window_services_subtitle">Профессинальная консультация и проработка стратегий майнинга</div>
-                    <button className="main_window_btn main_services_btn">Поподробнее</button>
+                    <button onClick={goService} className="main_window_btn main_services_btn">Поподробнее</button>
                 </div>
                 <div className="windows_services_item">
                     <div className="window_services_title">Майнинг под ключ</div>
                     <div className="window_services_subtitle">Полный комплекс услуг по подбору и проведению  консультации по майнингу</div>
-                    <button className="main_window_btn main_services_btn">Поподробнее</button>
+                    <button onClick={goManing} className="main_window_btn main_services_btn">Поподробнее</button>
                 </div>
             </div>
         </div>
