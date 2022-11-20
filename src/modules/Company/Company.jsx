@@ -11,10 +11,12 @@ export const Company = () => {
         <main>
             <div className="container">
                 {window.scrollTo(0, 0)}
-                <CompanyText/>
-                <Quality/>
-                <h2 className="contact_best">Проверенные временем производители</h2>
-                <Best/>
+                <div className="companyPage">
+                    <CompanyText/>
+                    <Quality/>
+                    <h2 className="contact_best">Проверенные временем производители</h2>
+                    <Best/>
+                </div>
             </div>
             <ConsultationMain/>
         </main>

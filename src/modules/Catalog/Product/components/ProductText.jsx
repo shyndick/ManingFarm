@@ -2,7 +2,7 @@ export const ProductText = () => {
     return(
         <div className="catalog_text">
             <div className="catalog_text_title">10 причин, почему стоит заказать у нас?</div>
-            <div className="catalog_text_subtitle">
+            <div className="catalog_text_subtitle maning_item">
                 <ul>
                     <li>Всегда качественный товар:
 Качество - основополагающая характеристика товара. Именно поэтому прежде чем продукция попадает на полки нашего интернет магазина, все товары тщательно проверяются</li>

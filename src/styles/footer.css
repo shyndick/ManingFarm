@@ -23,10 +23,15 @@ footer {
     margin-top: 10px;
 }
 
+.f_item a:hover {
+    color: #6f5cea;
+}
+
 .f_title{
     color: #6f5cea;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 18px;
 }
 
 .f_item .info_messege {

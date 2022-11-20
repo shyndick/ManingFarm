@@ -28,7 +28,7 @@ export const Footer = () => {
                     <div className="f_item">
                         <p className="f_title">Контактная инфомация</p>
                         <a className='contact_email' href="email:maner@basa.com">miner@basa.com</a>
-                        <a className='contact_phone' href="tel:+375255275480">+375 25 527-54-80</a>
+                        <a className='contact_phone' href="tel:+375255275480">3-021-021</a>
                         <p>ООО"Aйти Технологии"</p>
                         <p>ИНН: 5465465465465</p>
                         <ContactMessege/>

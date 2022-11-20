@@ -25,6 +25,15 @@ export const Cart = observer(() => {
                                 </div>    
                         </div>}
                 <ul>
+                    <li className="cart_wrapper">
+                        <p className="cart_name">Название</p>
+                        <div className="cart_img">
+                            Фото
+                        </div>
+                        <div className="cart_count">Количество шт</div>
+                        <p className="price_cart">Цена BYN</p>
+                        <a className="cart_delete" ></a>
+                    </li>
                     {cart.length > 0 && cart.map((cartItem) => 
                         <CartItem cartItem={cartItem} deleteCartItem={deleteCartItem} key={cartItem.id}/>
                     )}

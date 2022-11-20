@@ -39,6 +39,7 @@
 
 .compani_wrapper {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .ferm_wrapper {
@@ -77,7 +78,7 @@
 
 .consultation_wrapper li,
 .maning_item li {
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px 10px 20px;
 }
 
 .ant-form {
@@ -93,7 +94,9 @@
 .contactPage h1,
 .guaranteePage h1,
 .deliveryPage h1,
-.politicaPage h1{
+.politicaPage h1,
+.servicePage h1,
+.companyPage h1{
     font-size: 35px;
     padding: 20px;
     text-align: center;

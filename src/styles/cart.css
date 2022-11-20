@@ -21,6 +21,13 @@
     border-radius: 10px;
     padding: 10px;
 
+} 
+
+.cart_wrapper:first-child p,
+.cart_wrapper:first-child .cart_img,
+.cart_wrapper:first-child .cart_count{
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .cart_name,
@@ -92,15 +99,24 @@
 }
 
 .zakaz_btn {
-    background-color: #6f5cea;
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #6f5cea;
+    padding: 10px;
     border-radius: 10px;
     font-size: 25px;
-    color: #fff;
-    border: none;
+    color: #6f5cea;
     margin: 10px 0;
     width: 400px;
     height: 50px;
+}
+
+.zakaz_btn:hover {
+    background-color: #6f5cea;
+    color: #fff;
+    border-color: #6f5cea;
 }
 
 .ant-col-8 {

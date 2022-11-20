@@ -75,6 +75,8 @@ main {
 }
 
 .main_services_btn {
+    width: 165px;
+    height: 54px;
     background-color: #303239;
     margin-top: 10px;
 }
@@ -233,12 +235,12 @@ main {
 .consultation {
     margin-top: 20px;
     background: url("../image/male.jpeg") ;
-    background-position: 100% 40%;
-    background-size: 70% ;
+    background-position: 100% 32%;
+    background-size: 68% ;
     background-repeat: no-repeat;
     -webkit-box-shadow: 00px 0px 100px 10px rgb(167, 88, 205, 0.95) inset;
     -moz-box-shadow: 00px 0px 100px 10px rgb(167, 88, 205, 0.95) inset;
-    box-shadow: 600px 0px 100px 10px rgb(167, 88, 205, 1) inset;
+    box-shadow: 700px 0px 100px 10px rgb(167, 88, 205, 1) inset;
 }
 
 .consultation .container {

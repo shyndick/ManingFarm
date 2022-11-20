@@ -6,14 +6,15 @@ export const Servise = () => {
     return(
         <main>
             <div className="container">
+                <div className="servicePage">
                 <h1>Услуги</h1>
-                {window.scrollTo(0, 0)}
-                <Services/>
-                <div className="servise_wrapper">
-                    <ServiceItem title={'Ремонт видеокарт'} subtitle={'Ремонт фермы'}/>
-                    <ServiceItem title={'Разгон видеокарт'} subtitle={'Консультация'}/>
+                    {window.scrollTo(0, 0)}
+                    <Services/>
+                    <div className="servise_wrapper">
+                        <ServiceItem title={'Ремонт видеокарт'} subtitle={'Ремонт фермы'}/>
+                        <ServiceItem title={'Разгон видеокарт'} subtitle={'Консультация'}/>
+                    </div>
                 </div>
-                
 
                 </div>
         </main>
