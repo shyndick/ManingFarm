@@ -4,8 +4,11 @@ import { ContactMessege } from "./ContactMessege"
 import cartStore from "../modules/Cart/stores/CartStore"
 import { observer } from "mobx-react-lite"
 import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
+import App from "./ModalHeader"
 
 export const Header = observer(() => {
+
+    const {showModal} = App
 
     const {cartCount, cartPrices} = cartStore
 
@@ -16,8 +19,8 @@ export const Header = observer(() => {
                     <div className="info_wrapper">
                         <div className="info_items">
                             <a className='info_email' href="email:maner@basa.com"><i className="fa fa-envelope" aria-hidden="true"></i>miner@basa.com</a>
-                            <a className='info_phone' href="tel:+375255275480"><i className="fa fa-phone" aria-hidden="true"></i>+375 25 527-54-80</a>
-                            <a className='info_pozvoni' href="tel:+375255275480">Заказать звонок</a>
+                            <a className='info_phone' href="tel:3-021-021"><i className="fa fa-phone" aria-hidden="true"></i>3-021-021</a>
+                            <App/>
                         </div>
                         <ContactMessege/>
                     </div>    

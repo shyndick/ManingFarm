@@ -10,7 +10,7 @@
 
 .coin_item:nth-child(odd)
  {
-    background-color: #a19dd1;
+    background-color: #6f5cea;
 }
 
 .coin_title{
@@ -68,7 +68,7 @@
     height: 64px;
     margin: 8px;
     border-radius: 50%;
-    background: #a19dd1;
+    background: #6f5cea;
     animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
   @keyframes lds-circle {

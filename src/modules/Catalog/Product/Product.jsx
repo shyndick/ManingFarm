@@ -8,7 +8,7 @@ import cartStore from "../../Cart/stores/CartStore";
 import App from "./components/Rating";
 import {CartCount} from "./components/Count"
 import { ProductText } from "./components/ProductText";
-import { Consultation } from "../../Main/components/Consultation";
+import { ConsultationMain } from "../../Main/components/ConsultationMain";
 import { Services } from "../../Main/components/Services";
 
 
@@ -34,7 +34,7 @@ export const Product = observer(() => {
         <main>
         <div className="container">
             
-            {idProductLoading && <h2>Loading Product</h2>}
+            {idProductLoading && <div className="container coin_center"><div className="lds-circle"><div></div></div></div>}
             {!idProductLoading && images && prices && <div className="product_wrapper">
                                             
                                             <div className="product_items">
@@ -63,7 +63,7 @@ export const Product = observer(() => {
                                     <ProductText/>
                                     <Services/>
         </div>
-        <Consultation/>
+        <ConsultationMain/>
         </main>
     )
 })

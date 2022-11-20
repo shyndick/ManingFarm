@@ -1,11 +1,13 @@
 import {GuaranteeText} from "./components/GuaranteeText"
+import {ConsultationMain} from "../Main/components/ConsultationMain"
 export const Guarantee = () => {
     return (
         <main>
             <div className="container">
-                <h1>Гарантия/Возврат</h1>
+            {window.scrollTo(0, 0)}
                 <GuaranteeText/>
             </div>
+            <ConsultationMain/>
         </main>
     )
 }

@@ -16,6 +16,7 @@ export const Catalog = observer(() => {
     return (
         <main>
             <div className="container">
+                
                 <div className="main_catalog_wrapper">
                     <CatalogButton/>
                     <div className="main_catalog_items">

@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
 import catalogVideocardStore from "../stores/CatalogVideocardStore"
 import { CatalogProductCard } from "./CatalogProductCard"
+import Catalog from "./Loader"
 
 export const VideocardItems = observer(() => {
 
@@ -18,10 +19,10 @@ export const VideocardItems = observer(() => {
         }, [])
 
     return(
-        <>
+        <>  {window.scrollTo(0, 0)}
             <div className="products_items">
                     <div className="products_item">
-                {isLoading && <h2>Loading....</h2>}
+                {isLoading && <Catalog/>}
                 {!isLoading && productsByManufactur && productsByManufactur.map((item, index) => 
                     <CatalogProductCard key={index} productCard={item}/>)}
                     </div>

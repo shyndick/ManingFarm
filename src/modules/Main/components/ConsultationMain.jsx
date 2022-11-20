@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom"
 
-export const Consultation = () => {
+export const ConsultationMain = () => {
 
     const navigate = useNavigate()
 
+    const navigatePage = window.location.pathname.toString()
+
     const handleClick = () => {
-        navigate('./service/consultation')
+        if(navigatePage !== '/') navigate('/../../../service/consultation')
+        else navigate('/service/consultation')
 }
 
 

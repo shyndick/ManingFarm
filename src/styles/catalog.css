@@ -268,3 +268,12 @@ main .container {
     align-items: center;
     margin-top: 20px;
 }
+
+.ant-pagination-options-size-changer.ant-select {
+    display: none;
+}
+
+.ant-pagination {
+    margin: 20px;
+    text-align: center;
+}

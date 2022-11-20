@@ -11,7 +11,7 @@ export const Footer = () => {
                         <NavLink to="/contacts">Контакты</NavLink>
                         <NavLink to="/company">O компании</NavLink>
                         <NavLink to="/delivery">Доставка и оплата</NavLink>
-                        <NavLink to="/company">Политика</NavLink>
+                        <NavLink to="/politica">Политика обработки персональных данных</NavLink>
                     </div>
                     <div className="f_item">
                         <p className="f_title">Служба поддежки</p>

@@ -7,6 +7,7 @@ export const Servise = () => {
         <main>
             <div className="container">
                 <h1>Услуги</h1>
+                {window.scrollTo(0, 0)}
                 <Services/>
                 <div className="servise_wrapper">
                     <ServiceItem title={'Ремонт видеокарт'} subtitle={'Ремонт фермы'}/>

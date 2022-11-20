@@ -40,3 +40,69 @@
 .compani_wrapper {
     font-size: 18px;
 }
+
+.ferm_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ferm_img,
+.pageRazgon .ferm_img {
+    width: 600px;
+}
+
+.ferm_img img,
+.pageRazgon .ferm_img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.consultation_wrapper,
+.razgon_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation_wrapper .maning_item,
+.pageRazgon .maning_item {
+    width: 50%;
+}
+
+.consultation_wrapper h2,
+.maning_item h2 {
+    color: #6f5cea;
+}
+
+.consultation_wrapper li,
+.maning_item li {
+    margin: 10px 10px 10px 0;
+}
+
+.ant-form {
+    width: 50%;
+}
+
+.consultation_title h1,
+.maningPage h1,
+.fermPage h1,
+.remontPage h1,
+.pageRemontFerm h1,
+.pageRazgon h1,
+.contactPage h1,
+.guaranteePage h1,
+.deliveryPage h1,
+.politicaPage h1{
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+}
+
+.consultationPage .consultation {
+    height: 250px;
+}
+
+.consultationPage .consultation button {
+    display: none;
+}

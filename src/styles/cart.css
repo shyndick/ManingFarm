@@ -109,6 +109,14 @@
     max-width: 33.33333333%;
 }
 
+.ant-modal-body .ant-form {
+    width: 100%;
+}
+
+.ant-modal-footer {
+    display: none;
+}
+
 .cart_null h2 {
     text-align: center;
 }

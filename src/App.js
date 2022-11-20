@@ -14,6 +14,7 @@ import {Maning } from "./modules/Servise/components/Maning"
 import {Ferm } from "./modules/Servise/components/Ferm"
 import { Consultation } from "./modules/Servise/components/Consultation";
 import {Company} from "./modules/Company/Company"
+import { Politica } from "./modules/Politica/Politica";
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/service/consultation" element={<Consultation/>}></Route>
           <Route path="guarantee" element={<Guarantee/>}></Route>
           <Route path="delivery" element={<Delivery/>}></Route>
+          <Route path="politica" element={<Politica/>}></Route>
           <Route index element={<Main/>}></Route>
           <Route path="catalog/*" element={<CatalogApp/>}></Route>
           <Route path="coin-list" element={<CoinList/>}></Route>

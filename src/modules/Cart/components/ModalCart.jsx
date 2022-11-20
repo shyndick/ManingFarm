@@ -2,7 +2,7 @@
 import { Button, Modal } from 'antd';
 import React, { useState } from 'react';
 import FormCart from './CartForm';
-const App = ({onClose, title, cart, deleteAllCart}) => {
+const App = ({cart, deleteAllCart}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -11,7 +11,6 @@ const App = ({onClose, title, cart, deleteAllCart}) => {
     setIsModalOpen(false);
     localStorage.setItem('zakaz', JSON.stringify(cart))
     deleteAllCart()
-    onClose()
   };
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -22,7 +21,7 @@ const App = ({onClose, title, cart, deleteAllCart}) => {
         Оформить заказ
       </Button>
       <Modal title="Оформление заказа" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-      <FormCart/>
+      <FormCart onOk={handleOk}/>
       </Modal>
     </>
   );

@@ -9,6 +9,7 @@ export const Contacts = () => {
     return(
         <main>
             <div className="container">
+                {window.scrollTo(0, 0)}
                 <CompaniText/>
             </div>
         </main>

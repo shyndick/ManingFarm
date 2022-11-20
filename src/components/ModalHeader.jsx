@@ -1,16 +1,27 @@
-export const ModalHeader = () => {
-    
+import { Modal } from 'antd';
+import React, { useState } from 'react';
+import ModalHeaderForm from './ModalHeaderForm';
+const App = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
 
-    return (
-        <div className="modal" onClick={(e) =>handleClick(e)}>
-            <div className="modal_wrapper" onClick={(e) =>handleChildClick(e)}>
-                <h2>Заказать звонок</h2>
-                <input type="text" />
-                <input type="email" />
-                <input type="phone" />
-                <button onClick={(e) =>handleClickZakaz()}>zakaz</button>
-                <button onClick={(e) =>handleClick(e)}>close</button>
-            </div>
-        </div>
-    )
-}
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  return (
+    <>
+      <a className="info_pozvoni" type="primary" htmlType="submit" onClick={showModal}>
+      Заказать звонок
+      </a>
+      <Modal title="Заказать звонок" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <ModalHeaderForm onOk={handleOk}/>
+      </Modal>
+    </>
+  );
+};
+export default App;

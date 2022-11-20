@@ -25,7 +25,9 @@ export const Coin = observer(() => {
 
 
     return(
-        <main> <div className="container"> 
+        <main>
+            {window.scrollTo(0, 0)}
+            <div className="container"> 
             {loading && <div className="coin_center"><div className="lds-circle"><div></div></div></div>}
             {coinList.id && !loading &&
             

@@ -1,11 +1,11 @@
-import { DeliveryText } from "./components/DeliveryText"
+import { PoliticaText } from "./components/PoliticaText"
 
-export const Delivery = () => {
-    return (
+export const Politica = () => {
+    return(
         <main>
             <div className="container">
             {window.scrollTo(0, 0)}
-                <DeliveryText/>
+                <PoliticaText/>
             </div>
         </main>
     )

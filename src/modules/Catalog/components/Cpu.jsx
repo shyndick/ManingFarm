@@ -19,7 +19,6 @@ export const Cpu = observer(() => {
 
     return(
         <main>
-
             <div className="container">
 
                 <div className="category_wrapper">

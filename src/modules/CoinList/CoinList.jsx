@@ -18,6 +18,7 @@ export const CoinList = observer(() => {
     return (
         
         <main>
+            {window.scrollTo(0, 0)}
             <div className="container">
                 <h1 className="coin_title">Курс криптовалют</h1>
                 <CoinListName/>
