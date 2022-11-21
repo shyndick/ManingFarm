@@ -28,16 +28,26 @@ class CartStore {
         return  allPrices.toFixed(2)
     }
 
-    addToCart (product) {
+    addToCart (product, count) {
         const indexProductInCart = this.cart.findIndex(({id}) => id === product.id)
-        if(indexProductInCart !== -1 ){
-            this.cart[indexProductInCart].count +=1
+        if(!count){
+            if(indexProductInCart !== -1 ){
+                this.cart[indexProductInCart].count +=1
+                console.log(count)
+            } else {
+                product.count = 1
+                this.cart.push(product)
+            }
         } else {
-            product.count = 1
-            this.cart.push(product)
+            if(indexProductInCart !== -1 ){
+                this.cart[indexProductInCart].count += count
+            } else {
+                product.count = count
+                this.cart.push(product)
+            }
         }
+       
         localStorage.setItem('cart', JSON.stringify(this.cart))
-        console.log(this.cart)
     }
 
     deleteCartItem (cartItemId) {

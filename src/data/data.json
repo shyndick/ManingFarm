@@ -27534,7 +27534,7 @@
           }
         ],
         "manufacturer":[
-          "products",  
+          "Все товары",  
           "Gigabyte",
             "NVIDIA",
             "ASUS",
@@ -32555,7 +32555,7 @@
           }
         ],
         "manufacturer":[
-          "products",
+          "Все товары",
             "AMD",
             "Intel"
         ],
@@ -47832,7 +47832,7 @@
     
   ],
         "manufacturer":[
-            "products",
+            "Все товары",
             "Gigabyte",
             "ASUS",
             "MSI",

@@ -32,7 +32,7 @@ class CatalogCpuStore {
         const json = await response.json()
         runInAction(() => {
             switch(manufactur) {
-                case "products":
+                case "Все товары":
                     this.productsCpuByManufactur = json[0].products
                     this.isLoadingC = false
                 break;

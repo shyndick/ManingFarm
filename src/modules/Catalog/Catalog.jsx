@@ -15,6 +15,7 @@ export const Catalog = observer(() => {
 
     return (
         <main>
+            {window.scrollTo(0, 0)}
             <div className="container">
                 
                 <div className="main_catalog_wrapper">

@@ -33,7 +33,7 @@ class CatalogMotherboardStore {
         const json = await response.json()
         runInAction(() => {
             switch(manufactur) {
-                case "products":
+                case "Все товары":
                     this.productsMotherboardByManufactur = json[0].products
                     this.isLoadingM = false
                 break;

@@ -24,6 +24,7 @@ export const Cart = observer(() => {
                                 <img src={Cat} alt="" />
                                 </div>    
                         </div>}
+                        {cart.length > 0 && 
                 <ul>
                     <li className="cart_wrapper">
                         <p className="cart_name">Название</p>
@@ -34,10 +35,11 @@ export const Cart = observer(() => {
                         <p className="price_cart">Цена BYN</p>
                         <a className="cart_delete" ></a>
                     </li>
+                </ul>}    
                     {cart.length > 0 && cart.map((cartItem) => 
                         <CartItem cartItem={cartItem} deleteCartItem={deleteCartItem} key={cartItem.id}/>
                     )}
-                </ul>
+                
             
                 {cart.length > 0 && (
                 <div className="all_prices">

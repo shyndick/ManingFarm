@@ -20,20 +20,35 @@ export const Product = observer(() => {
     const {full_name, reviews, images, description, prices, extended_name} = productData
     const {addToCart, cart} = cartStore
 
-    const handleClick = () => {
-        addToCart(productData)
+    const [count, setCount] = useState(1)
+
+    const handleClickPlus = () => {
+        setCount(count+1)
     }
 
+    const handleClickMinus = () => {
+        if(count > 1) setCount(count-1)
+    }
+
+    const handleClick = () => {
+        addToCart(productData, count)
+    }
+
+
     useEffect(()=> {
-        if(productId) {
-            loadProduct(productId)
+        console.log(productId)
+        if(productId || count) {
+            console.log(productId)
+            loadProduct(productId, count)
         } 
     }, [])
+
+    
 
     return(
         <main>
         <div className="container">
-            
+            {window.scrollTo(0, 0)}
             {idProductLoading && <div className="container coin_center"><div className="lds-circle"><div></div></div></div>}
             {!idProductLoading && images && prices && <div className="product_wrapper">
                                             
@@ -52,7 +67,7 @@ export const Product = observer(() => {
                                                     <p className="product_info_price">{prices.price_min.amount} BYN</p>
                                                     <div className="product_btn_one">
                                                         <button onClick={handleClick} className="add_to_card">Добавить в корзину</button>
-                                                        <CartCount/>
+                                                        <CartCount handleClickPlus={handleClickPlus} handleClickMinus={handleClickMinus} count={count}/>
                                                     </div>
                                                     
                                                 </div>

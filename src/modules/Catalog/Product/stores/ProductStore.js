@@ -9,13 +9,13 @@ export class ProductStore {
     constructor() {
         makeAutoObservable(this)
         }
-        loadProduct = async (productId) => {
+        loadProduct = async (productId, count) => {
             this.idProductLoading = true
+            console.log(productId)
             try {
             const response = await fetch(`http://localhost:3000/allProduct?id=${productId}`)
 
             if(response.status >= 400) {
-                console.log(response)
                 notification.error({
                     message: response.status,
                     description: response.statusText
@@ -24,8 +24,10 @@ export class ProductStore {
             }
             const json = await response.json()
             runInAction(()=>{
+                console.log(this.productData)
                 this.productData = {...json[0]}
-                this.productData.count = 0
+                if(count)  this.productData.count = count
+                else  this.productData.count = 1
                 this.idProductLoading = false
             })
         } catch (e) {
