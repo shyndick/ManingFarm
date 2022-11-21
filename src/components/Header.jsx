@@ -5,6 +5,8 @@ import cartStore from "../modules/Cart/stores/CartStore"
 import { observer } from "mobx-react-lite"
 import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
 import App from "./ModalHeader"
+import { Navigation } from "./Navigation"
+import { MobileNav } from "./MobileNav"
 
 export const Header = observer(() => {
 
@@ -14,7 +16,7 @@ export const Header = observer(() => {
 
     return (
         <header >
-            <div className="info">
+            <div className="info fixed">
                 <div className="container"> 
                     <div className="info_wrapper">
                         <div className="info_items">
@@ -23,25 +25,18 @@ export const Header = observer(() => {
                             <App/>
                         </div>
                         <ContactMessege/>
-                    </div>    
+                        <MobileNav/> 
+                    </div>
+                       
                 </div>
             </div>
             <div className="container">
-                <div className="nav">
+                <div className="nav nav_fixed">
                     <div className="logo">
                         <a href="/"><img src={Logo} alt="" /></a>
                     </div>
-                    <div className='nav_wrapper'>
-                        <NavLink className="nav_link" to="/">Главная</NavLink>
-                        <div className="dropdown">
-                            <NavLink className="nav_link" to="/catalog">Каталог</NavLink>
-                            <CatalogButton/>
-                        </div>
-                        <NavLink className="nav_link" to="/coin-list">Курс крипты</NavLink>
-                        <NavLink className="nav_link" to="/servise">Услуги</NavLink>
-                        <NavLink className="nav_link" to="/company">О компании</NavLink>
-                    </div>
-                    <div className="nav_cart">
+                    <Navigation/>
+                <div className="nav_cart">
                         <NavLink to="/cart">
                             <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                             {cartPrices && cartCount && <div className="nav_cart_price">
@@ -51,6 +46,7 @@ export const Header = observer(() => {
                             </NavLink>
                     </div>
                 </div>
+                
             </div>
         </header>
     )

@@ -11,6 +11,16 @@ import '../src/styles/catalog.css'
 import '../src/styles/cart.css'
 import '../src/styles/contacts.css'
 import '../src/styles/servise.css'
+import '../src/styles/media/mediaStyle.css'
+import '../src/styles/media/mediaCart.css'
+import '../src/styles/media/mediaCatalog.css'
+import '../src/styles/media/mediaCoin.css'
+import '../src/styles/media/mediaCoinList.css'
+import '../src/styles/media/mediaContacts.css'
+import '../src/styles/media/mediaFooter.css'
+import '../src/styles/media/mediaHeader.css'
+import '../src/styles/media/mediaMain.css'
+import '../src/styles/media/mediaServise.css'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 

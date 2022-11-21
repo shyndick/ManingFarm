@@ -1,0 +1,6 @@
+@media (max-width:1024px) {
+    .coin_list_item, .coin_list_name_item {
+        font-size: 18px;
+        text-align: center;
+    }
+}

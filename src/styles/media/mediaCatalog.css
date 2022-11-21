@@ -1,0 +1,45 @@
+@media (max-width: 1100px) {
+    .manufacturer_wrapper {
+        display: block;
+    }
+
+    .manufacturer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product_info h2 {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .product_img img {
+        width: 300px;
+    }
+
+    .product_info_description {
+    line-height: 22px;
+    font-size: 16px;
+    }
+
+    .compani_img {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .catalog_item h3 a {
+        font-weight: 700;
+    }
+
+    .count_items button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .product_btn_one .add_to_card {
+        font-size: 18px;
+    }
+}

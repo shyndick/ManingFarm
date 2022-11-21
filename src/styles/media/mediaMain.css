@@ -1,0 +1,41 @@
+@media (max-width: 1100px) {
+    .window_services_subtitle {
+        line-height: 20px;
+    }
+
+    .quality_item_subtitle {
+        line-height: 20px;
+    }
+
+    .quality_item_title {
+        margin-top: 10px;
+    }
+
+    .best_img:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .consultation {
+        box-shadow: 500px 0px 100px 10px rgb(167 88 205) inset;
+    }
+
+    .consultation_item h2 {
+        line-height: 30px;
+    }
+
+    .services_item p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .window_catalog_title, .window_services_title {
+        line-height: 25px;
+        font-size: 25px;
+    }
+
+    .window_services_subtitle {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}

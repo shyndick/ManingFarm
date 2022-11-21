@@ -1,3 +1,7 @@
+.mobile_nav {
+    display: none;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -42,6 +46,10 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .manufacturer {
     display: block;
+}
+
+.btn_menu{
+    display: none;
 }
 
 
