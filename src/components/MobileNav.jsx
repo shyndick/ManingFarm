@@ -24,10 +24,7 @@ export const MobileNav = () => {
             </button>
             <div className={menuClass}>
                 <NavLink className="nav_link" to="/" onClick={()=>{setIsMenuCLicked(false)}}>Главная</NavLink>
-                <div className="dropdown">
-                    <NavLink className="nav_link" to="/catalog" onClick={()=>{setIsMenuCLicked(false)}}>Каталог</NavLink>
-                    <CatalogButton/>
-                </div>
+                <NavLink className="nav_link" to="/catalog" onClick={()=>{setIsMenuCLicked(false)}}>Каталог</NavLink>
                 <NavLink className="nav_link" to="/coin-list" onClick={()=>{setIsMenuCLicked(false)}}>Курс крипты</NavLink>
                 <NavLink className="nav_link" to="/servise" onClick={()=>{setIsMenuCLicked(false)}}>Услуги</NavLink>
                 <NavLink className="nav_link" to="/company" onClick={()=>{setIsMenuCLicked(false)}}>О компании</NavLink>

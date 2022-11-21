@@ -29,3 +29,15 @@
         align-items: center;
     }
 }
+
+@media (max-width:800px) {
+    .cart_img img {
+        height: 50px;
+    }
+
+    .cart_name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

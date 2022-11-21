@@ -4,3 +4,22 @@
         text-align: center;
     }
 }
+
+@media (max-width: 1024px) {
+    .coin_list_name_item:nth-child(2),
+    .coin_list_name_item:nth-child(3) {
+        display: none;
+    }
+
+    .coin_list_item:nth-child(2),
+    .coin_list_item:nth-child(3) {
+        display: none;
+    }
+
+    .coin_list_item:first-child,
+    .coin_list_item:last-child,
+    .coin_list_name_item:first-child,
+    .coin_list_name_item:last-child {
+        width: 33.3%;
+    }
+}

@@ -1,0 +1,9 @@
+@media (max-width:800px) {
+    .coin_name {
+        width: 60%;
+    }
+
+    .coin_data {
+        width: 40%;
+    }
+}

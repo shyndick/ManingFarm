@@ -3,3 +3,21 @@
         font-weight: 700;
     }
 }
+
+@media (max-width: 800px) {
+    .f_item a {
+        margin-top: 2px;
+    }
+
+    .f_item {
+        margin-top: 8px;
+    }
+
+    footer {
+        height: 200px;
+    }
+    
+    .f_item p {
+        margin: 0;
+    }
+}
