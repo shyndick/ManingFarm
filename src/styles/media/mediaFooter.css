@@ -21,3 +21,37 @@
         margin: 0;
     }
 }
+
+@media (max-width: 425px) {
+
+    .f_item {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .f_title {
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .f_item:nth-child(1),
+    .f_item:nth-child(2),
+    .f_item:nth-child(3){
+        display: none;
+    }
+
+    .f_wrapper {
+        justify-content: center;
+    }
+
+    .contact_phone,
+    .contact_email,
+    .f_item a {
+        margin: 0;
+    }
+
+    footer {
+        height: 140px;
+    }
+
+}

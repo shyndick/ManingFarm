@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom"
-import Logo  from "../image/logo.png"
-import { ContactMessege } from "./ContactMessege"
-import cartStore from "../modules/Cart/stores/CartStore"
+import Logo  from "../../image/logo.png"
+import { ContactMessege } from "../ContactMessege"
+import cartStore from "../../modules/Cart/stores/CartStore"
 import { observer } from "mobx-react-lite"
-import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
-import App from "./ModalHeader"
-import { Navigation } from "./Navigation"
-import { MobileNav } from "./MobileNav"
+import { CatalogButton } from "../../modules/Catalog/components/CatalogButton"
+import App from "./components/ModalHeader"
+import { Navigation } from "./components/Navigation"
+import { MobileNav } from "./components/MobileNav"
 
 export const Header = observer(() => {
 

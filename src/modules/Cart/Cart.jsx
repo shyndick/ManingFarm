@@ -25,7 +25,7 @@ export const Cart = observer(() => {
                                 </div>    
                         </div>}
                         {cart.length > 0 && 
-                <ul>
+                <ul className="cart_item_name">
                     <li className="cart_wrapper">
                         <p className="cart_name">Название</p>
                         <div className="cart_img">

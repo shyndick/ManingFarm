@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
+import { CatalogButton } from "../../../modules/Catalog/components/CatalogButton"
 
 export const Navigation = () => {
     return(

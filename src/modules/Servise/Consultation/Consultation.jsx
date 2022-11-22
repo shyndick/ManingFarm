@@ -1,4 +1,4 @@
-import ModalService from "./ModalService"
+import ModalService from "../components/ModalService"
 import { ConsultationMain } from "../../Main/components/ConsultationMain"
 
 export const Consultation = () => {

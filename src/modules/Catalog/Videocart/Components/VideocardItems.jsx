@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
-import catalogVideocardStore from "../stores/CatalogVideocardStore"
-import { CatalogProductCard } from "./CatalogProductCard"
-import Catalog from "./Loader"
+import catalogVideocardStore from "../../stores/CatalogVideocardStore"
+import { CatalogProductCard } from "../../components/CatalogProductCard"
+import Catalog from "../../components/Loader"
 
 export const VideocardItems = observer(() => {
 

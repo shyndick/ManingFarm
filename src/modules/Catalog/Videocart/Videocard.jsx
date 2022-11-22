@@ -1,9 +1,9 @@
 import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
-import {VideocardItems} from "./VideocardItems"
+import {VideocardItems} from "./Components/VideocardItems"
 import catalogVideocardStore from "../stores/CatalogVideocardStore"
-import { GoBack } from "./GoBack"
-import { Videocardtext } from "./VideocartText"
+import { GoBack } from "../components/GoBack"
+import { Videocardtext } from "./Components/VideocartText"
 
 export const Videocard = observer(() => {
 

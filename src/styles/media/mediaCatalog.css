@@ -60,3 +60,74 @@
 
 
 }
+
+@media (max-width: 425px) {
+    .category_btn,
+    .manufactur_btn {
+        font-size: 16px;
+        width: 180px;
+        height: 45px;
+    }
+
+    .catalog_item {
+        width: 170px;
+    }
+
+    .catalog_item img {
+        max-height: 70px;
+    }
+
+    .catalog_item h3 a {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .catalog_micro_desiner{
+        line-height: 15px;
+        padding: 0 5px;
+    }
+
+    .catalog_item_img, .videocard_item_img  {
+        height: 150px;
+    }
+
+    .category_wrapper h1 {
+        margin: 0;
+    }
+
+    .catalog_price_bnt p {
+        padding-left: 5px;
+    line-height: 18px;
+    font-size: 16px;
+    }
+
+    .product_items {
+        display: block;
+
+    }
+
+    .product_img,
+    .product_info {
+        width: 100%;
+    }
+
+    .product_info .go_back {
+        display: none;
+    }
+
+    .rating_goback {
+        margin-top: 10px;
+    }
+
+    .product_info h2,
+    .product_info_description  {
+        margin: 5px 0;
+    }
+
+    .product_info_price,
+    .product_btn_one,
+    .catalog_text_title {
+        margin: 5px 0;
+    }
+}

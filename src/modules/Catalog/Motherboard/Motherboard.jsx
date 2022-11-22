@@ -2,10 +2,10 @@ import { useEffect } from "react"
 import { useNavigate} from "react-router-dom"
 import { observer } from "mobx-react-lite"
 import catalogMotherboardStore from "../stores/CatalogMotherboardStore"
-import { MotherboardItems } from "./MotherboardItems"
-import {GoBack} from "./GoBack"
-import { CatalogButton } from "./CatalogButton"
-import { MotherboardText } from "./MotherboardText"
+import { MotherboardItems } from "./Components/MotherboardItems"
+import {GoBack} from "../components/GoBack"
+import { CatalogButton } from "../components/CatalogButton"
+import { MotherboardText } from "./Components/MotherboardText"
 
 export const Motherboard = observer(() => {
 

@@ -1,9 +1,9 @@
-import catalogCpuStore from "../stores//CatalogCpuStore"
+import catalogCpuStore from "../stores/CatalogCpuStore"
 import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
-import { CpuItems } from "./CpuItems"
-import { GoBack } from "./GoBack"
-import { CpuText } from "./CpuText"
+import { CpuItems } from "./Components/CpuItems"
+import { GoBack } from "../components/GoBack"
+import { CpuText } from "./Components/CpuText"
 
 export const Cpu = observer(() => {
 

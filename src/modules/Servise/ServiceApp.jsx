@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
-import { Ferm } from "./components/Ferm"
-import { Maning } from "./components/Maning"
-import { Remont } from "./components/Remont"
-import { RemontFerm } from "./components/RemontFerm"
+import { Ferm } from "./Ferm/Ferm"
+import { Maning } from "./Maning/Maning"
+import { Remont } from "./Remont/Remont"
+import { RemontFerm } from "./RemontFerm/RemontFerm"
 import { Servise } from "./Servise"
-import { Razgon } from "./components/Razgon"
-import { Consultation } from "./components/Consultation"
+import { Razgon } from "./Razgon/Razgon"
+import { Consultation } from "./Consultation/Consultation"
 
 
 

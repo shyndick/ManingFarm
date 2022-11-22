@@ -64,6 +64,11 @@
         padding: 10px;
     }
 
+    .nav_link:hover {
+        background-color: #6f5cea;
+
+    }
+
 
     .burger_icon i {
         font-size: 35px;
@@ -127,4 +132,15 @@
         flex-direction: row-reverse;
     }
 
+}
+
+@media (max-width:425px) {
+    .info,
+    .nav {
+        width: 425px;
+    }
+
+    .nav_wrapper_mobile {
+        padding-top: 0;
+    }
 }

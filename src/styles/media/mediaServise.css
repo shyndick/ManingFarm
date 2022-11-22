@@ -52,3 +52,50 @@
         margin: 0;
     }
 }
+
+@media (max-width: 425px) {
+    .services_item p {
+        line-height: 13px;
+        font-size: 18px;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .services_item  {
+        height: 100px;
+    }
+
+    .consultation_title h1, .maningPage h1, .fermPage h1, .remontPage h1, .pageRemontFerm h1, .pageRazgon h1, .contactPage h1, .guaranteePage h1, .deliveryPage h1, .politicaPage h1, .servicePage h1, .companyPage h1 {
+        padding:5px;
+    }
+
+    .maning_item {
+        font-size: 16px;
+    }
+
+    .consultation_wrapper li, .maning_item li {
+        margin: 5px;
+    }
+
+    .ant-form {
+        width: 375px;
+        margin: 0;
+    }
+
+    .consultationPage .consultation {
+        display: none;
+    }
+
+    .ferm_wrapper {
+        display: block;
+    }
+
+    .ferm_img, .pageRazgon .ferm_img {
+        width: auto;
+        padding-bottom: 10px;
+    }
+
+    .contact_best {
+        display: none;
+    }
+}

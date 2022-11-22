@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-import { CatalogButton } from "../modules/Catalog/components/CatalogButton"
 import { useState, useEffect } from "react";
 
 export const MobileNav = () => {

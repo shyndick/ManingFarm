@@ -10,9 +10,9 @@ import { Guarantee} from "./modules/Guarantee/Guarantee"
 import { CatalogApp } from "./modules/Catalog/CatalogApp";
 import { CatalogAppMain } from "./modules/Catalog/CatalogAppMain";
 import { ServiceApp } from "./modules/Servise/ServiceApp";
-import {Maning } from "./modules/Servise/components/Maning"
-import {Ferm } from "./modules/Servise/components/Ferm"
-import { Consultation } from "./modules/Servise/components/Consultation";
+import {Maning } from "./modules/Servise/Maning/Maning"
+import {Ferm } from "./modules/Servise/Ferm/Ferm"
+import { Consultation } from "./modules/Servise/Consultation/Consultation";
 import {Company} from "./modules/Company/Company"
 import { Politica } from "./modules/Politica/Politica";
 

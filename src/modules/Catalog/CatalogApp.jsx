@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom"
 import { Catalog } from "./Catalog"
 import { Product } from "./Product/Product"
-import { Videocard } from "./components/Videocard"
-import { Cpu } from "./components/Cpu"
-import { Motherboard } from "./components/Motherboard"
+import { Videocard } from "./Videocart/Videocard"
+import { Cpu } from "./Cpu/Cpu"
+import { Motherboard } from "./Motherboard/Motherboard"
 
 export const CatalogApp = () => {
     return(

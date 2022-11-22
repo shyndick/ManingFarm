@@ -1,8 +1,8 @@
-import catalogCpuStore from "../stores//CatalogCpuStore"
+import catalogCpuStore from "../../stores/CatalogCpuStore"
 import { useEffect } from "react"
 import { observer } from "mobx-react-lite"
-import { CatalogProductCard } from "./CatalogProductCard"
-import Catalog from "./Loader"
+import { CatalogProductCard } from "../../components/CatalogProductCard"
+import Catalog from "../../components/Loader"
 
 export const CpuItems = observer(() => {
 
