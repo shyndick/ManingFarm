@@ -40,6 +40,7 @@ class CatalogVideocardStore {
         }
         const json = await response.json()
         runInAction(() => {
+            {console.log(manufactur)}
             switch(manufactur) {
                 case "Все товары":
                     this.productsByManufactur = json[0].products
@@ -58,7 +59,7 @@ class CatalogVideocardStore {
                     this.isLoading = false
                 break
                 case "AFOX":
-                    this.productsByCategory = json[0].ASROCK
+                    this.productsByManufactur = json[0].AFOX
                     this.isLoading = false
                 break;
                 case "ASUS":

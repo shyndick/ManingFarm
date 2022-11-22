@@ -31,7 +31,6 @@ export const Videocard = observer(() => {
         <main>
 
             <div className="container">
-
                 <div className="category_wrapper">
                     <h1>Видеокарты</h1>
                     <GoBack/>
@@ -40,7 +39,7 @@ export const Videocard = observer(() => {
                 <div className="manufacturer_wrapper">
                     <div className="manufacturer">
                             {manufacturer && manufacturer.map((manufactur, index) => 
-                                <button onClick={()=>{setManufactur(index)}} key={index} className='manufactur_btn'>{manufactur}</button>
+                                <button onClick={()=>{setManufactur(index)}} key={index} className='manufactur_btn'>{manufactur}  {}</button>
                             )
                         }
                     </div>
