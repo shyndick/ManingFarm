@@ -6,7 +6,6 @@ export const CoinListItem = ({id, name, volumeUsd24Hr, marketCapUsd, changePerce
 
     const handleClick = () => {
         navigate(`./${id}`)
-        console.log(id)
     }
 
     return(

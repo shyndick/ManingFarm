@@ -16,7 +16,6 @@ export const CatalogButton = observer(() => {
     const navigateCatalog = window.location.pathname.toString().substring(0, 8)
 
     const handleClickVideocard = () => {
-        console.log(navigateCatalog)
         if(navigateCatalog === '/catalog')
         navigate(`./${type[0]}`)
         else navigate(`./catalog/${type[0]}`)

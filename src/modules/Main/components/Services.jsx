@@ -17,7 +17,6 @@ export const Services = () => {
     }
 
     const goFerm = () => {
-        console.log(window.location.pathname.toString())
         if(navigateService === '/servise')
         navigate('./ferm')
         else if (navigateService ===  '/')

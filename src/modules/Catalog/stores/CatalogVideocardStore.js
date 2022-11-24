@@ -1,4 +1,5 @@
 import {makeAutoObservable, runInAction} from "mobx"
+import {notification } from 'antd';
 
 class CatalogVideocardStore {
 
@@ -20,7 +21,11 @@ class CatalogVideocardStore {
         try {
         const response = await fetch('http://localhost:3000/videocard')
         if(response.status >= 400) {
-            throw new Error(`response Error ${response.status} - ${response.statusText}` )
+            notification.error({
+                message: response.status,
+                description: response.statusText
+            })
+            throw new Error (response)
         }
         const json = await response.json()
             runInAction(() => {
@@ -36,11 +41,14 @@ class CatalogVideocardStore {
         try {
         const response = await fetch('http://localhost:3000/videocard')
         if(response.status >= 400) {
-            throw new Error(`response Error ${response.status} - ${response.statusText}` )
+            notification.error({
+                message: response.status,
+                description: response.statusText
+            })
+            throw new Error (response)
         }
         const json = await response.json()
         runInAction(() => {
-            {console.log(manufactur)}
             switch(manufactur) {
                 case "Все товары":
                     this.productsByManufactur = json[0].products

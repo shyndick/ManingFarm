@@ -36,9 +36,7 @@ export const Product = observer(() => {
 
 
     useEffect(()=> {
-        console.log(productId)
         if(productId || count) {
-            console.log(productId)
             loadProduct(productId, count)
         } 
     }, [])

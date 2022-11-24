@@ -1,4 +1,5 @@
 import {makeAutoObservable, runInAction} from "mobx"
+import {notification } from 'antd';
 
 class CatalogCpuStore {
 
@@ -19,16 +20,35 @@ class CatalogCpuStore {
     
 
     loadCpuManufacturer = async() => {
+        try {
         const response = await fetch('http://localhost:3000/cpu')
+        if(response.status >= 400){
+            notification.error({
+                message: response.status,
+                description: response.statusText
+            })
+            throw new Error (response)
+        }
         const json = await response.json()
             runInAction(() => {
                 this.manufacturerCpu = json[0].manufacturer
             })
+        } catch(e) {
+            console.log(e)
+        }
     }
 
     loadCpuManufactur = async(manufactur) => {
+        try{
         this.isLoadingC = true
         const response = await fetch('http://localhost:3000/cpu')
+        if(response.status >= 400) {
+            notification.error({
+                message: response.status,
+                description: response.statusText
+            })
+            throw new Error (response)
+        }
         const json = await response.json()
         runInAction(() => {
             switch(manufactur) {
@@ -46,6 +66,9 @@ class CatalogCpuStore {
                 break;
             }   
         })
+        } catch (e) {
+            console.log(e)
+        }
     }
 }
 
