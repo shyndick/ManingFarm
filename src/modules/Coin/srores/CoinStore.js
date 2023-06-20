@@ -1,5 +1,6 @@
 import {makeAutoObservable} from "mobx"
 import { runInAction } from "mobx"
+import {notification } from 'antd';
 
 export class CoinStore {
     loading = true
@@ -16,7 +17,7 @@ export class CoinStore {
         
         try{
         const response = await fetch(`https://api.coincap.io/v2/assets/${id}`)
-        if(response.json >= 400) {
+        if(response.status >= 400) {
             notification.error({
                 message: response.status,
                 description: response.statusText
