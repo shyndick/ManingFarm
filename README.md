@@ -69,7 +69,7 @@
 
 ![Корзина](https://ibb.co/cTqB5c7)
 
-![Оформление заказа](https://ibb.co/jbTFh17)
+![Оформление заказа](<a href="https://ibb.co/jbTFh17"><img src="https://i.ibb.co/n6bSr5h/zakaz.jpg" alt="zakaz" border="0" /></a>)
 
 ![Каталог с курсом криптовалюты](https://ibb.co/9wjwrVh)
 
