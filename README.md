@@ -59,23 +59,39 @@
 ### Главная страница.
 Главная страница сайта имеет следующий вид:
 
-![Главная страница] (<a href="https://ibb.co/sFzK4w3"><img src="https://i.ibb.co/p35fTzX/screencapture-localhost-3001-2023-07-19-17-48-08.png" alt="screencapture-localhost-3001-2023-07-19-17-48-08" border="0" /></a>)
+<a href="https://ibb.co/sFzK4w3"><img src="https://i.ibb.co/p35fTzX/screencapture-localhost-3001-2023-07-19-17-48-08.png" alt="screencapture-localhost-3001-2023-07-19-17-48-08" border="0" /></a>
 
-![Каталог](https://ibb.co/vhX438K )
+![Каталог]
 
-![Каталог с выбраной категорией](https://ibb.co/cJtVnDm )
+<a href="https://ibb.co/vhX438K"><img src="https://i.ibb.co/pQhjfp9/catalog.jpg" alt="catalog" border="0" /></a>
 
-![Страница продукта](https://ibb.co/CJ6pFcc)
+![Каталог с выбраной категорией]
 
-![Корзина](https://ibb.co/cTqB5c7)
+<a href="https://ibb.co/cJtVnDm"><img src="https://i.ibb.co/b1LD9zf/catalogmea.jpg" alt="catalogmea" border="0" /></a>
 
-![Оформление заказа](<a href="https://ibb.co/jbTFh17"><img src="https://i.ibb.co/n6bSr5h/zakaz.jpg" alt="zakaz" border="0" /></a>)
+![Страница продукта]
 
-![Каталог с курсом криптовалюты](https://ibb.co/9wjwrVh)
+<a href="https://ibb.co/CJ6pFcc"><img src="https://i.ibb.co/8zbnVCC/product.jpg" alt="product" border="0" /></a>
 
-![Информация о выбраной криптовалюте](https://ibb.co/WKsFDs5)
+![Корзина]
 
-![Обратная связь](https://ibb.co/ZTcZYkS)
+<a href="https://ibb.co/cTqB5c7"><img src="https://i.ibb.co/F7prvbj/cart.jpg" alt="cart" border="0" /></a>
+
+![Оформление заказа]
+
+<a href="https://ibb.co/jbTFh17"><img src="https://i.ibb.co/n6bSr5h/zakaz.jpg" alt="zakaz" border="0" /></a>
+
+![Каталог с курсом криптовалюты]
+
+<a href="https://ibb.co/9wjwrVh"><img src="https://i.ibb.co/3fHfCMv/coin.jpg" alt="coin" border="0" /></a>
+
+![Информация о выбраной криптовалюте]
+
+<a href="https://ibb.co/WKsFDs5"><img src="https://i.ibb.co/88X2zXs/coin-Product.jpg" alt="coin-Product" border="0" /></a>
+
+![Обратная связь]
+
+<a href="https://ibb.co/ZTcZYkS"><img src="https://i.ibb.co/C0VrMT6/konsult.jpg" alt="konsult" border="0" /></a>
 
 
 
