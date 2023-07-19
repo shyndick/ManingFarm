@@ -1,5 +1,5 @@
 import Lg from "../../../image/lg.png"
-import Asus from "../../../image/asus.png"
+import Asus from "../../../image/asus-new.jpg"
 import Msi from "../../../image/msi.png"
 import Nvivia from "../../../image/nvidia.png"
 import Samsung from "../../../image/samsung.png"
