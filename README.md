@@ -59,7 +59,7 @@
 ### Главная страница.
 Главная страница сайта имеет следующий вид:
 
-![Главная страница] [url=https://ibb.co/sFzK4w3][img]https://i.ibb.co/p35fTzX/screencapture-localhost-3001-2023-07-19-17-48-08.png[/img][/url]
+![Главная страница] (https://i.ibb.co/znhXdjN/screen19.png)
 
 ![Каталог](https://ibb.co/vhX438K )
 
